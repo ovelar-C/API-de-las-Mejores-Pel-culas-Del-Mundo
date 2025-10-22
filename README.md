@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # API-de-las-Mejores-Pel-culas-Del-Mundo
 Tratando de lograr funcionar y crear una API con la temática de Peículas
 =======
@@ -20,4 +20,3 @@ Tratando de lograr funcionar y crear una API con la temática de Peículas
 - Registro de logs en un archivo (logs.txt)
 - Respuestas de error personalizadas (por ejemplo, código 404 si no se encuentra el ID).
 - Endpoint adicional para obtener estadísticas o datos agregados (por ejemplo, cantidad total de elementos).
->>>>>>> 920f6b6 (commit)

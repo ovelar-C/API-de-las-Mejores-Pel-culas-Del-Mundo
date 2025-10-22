@@ -1,20 +1,655 @@
-{
-    "id": "",
-    "titulo": "ESTO ANDA O NO ANDA",
-    "fechaEstreno": 22,
-    "director": "Charlotte Welnnkjnkjnkjnls",
-    "ganadorOscar": false,
-    "generos": [
-      "3"
-    ],
-    "campoNuevo": "hola",
-    "costoInicial": 22,
-    "recaudacion": 12000000,
-    "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-    "duracionMinutos": 101,
-    "paisOrigen": "Reino Unido / Estados Unidos",
-    "idiomaOriginal": "Inglés",
-    "repartoPrincipales": [
-      "333"
-    ]
-}
+[
+    {
+        "id": "1",
+        "titulo": "El Padrino 2",
+        "fechaEstreno": 1974,
+        "director": "Francis Ford Coppola",
+        "ganadorOscar": true,
+        "generos": [
+            "Crimen",
+            "Drama"
+        ],
+        "costoInicial": 13000000,
+        "recaudacion": 193000000,
+        "rentable": null,
+        "sinopsis": "El Padrino Parte II explora la historia paralela de la familia Corleone: el ascenso de Vito en Sicilia y Nueva York, y la consolidación del poder de Michael en los años 50, mientras enfrenta traiciones y amenazas a su imperio criminal.",
+        "duracionMinutos": 202,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Al Pacino",
+            "Robert De Niro",
+            "Diane Keaton",
+            "Robert Duvall"
+        ]
+    },
+    {
+        "id": "2",
+        "titulo": "Aftersun",
+        "fechaEstreno": 2022,
+        "director": "Charlotte Wells",
+        "ganadorOscar": false,
+        "generos": [
+            "Drama"
+        ],
+        "costoInicial": 2100000,
+        "recaudacion": 10000000,
+        "rentable": null,
+        "sinopsis": "Una chica escocesa de 11 años recuerda unas vacaciones en un resort turco con su padre, quien lucha con su melancolía interna, mientras intenta reconciliar los recuerdos felices con la complejidad de su relación.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Paul Mescal",
+            "Frankie Corio",
+            "Celia Rowlson-Hall"
+        ]
+    },
+    {
+        "id": "3",
+        "titulo": "Lost in Translation",
+        "fechaEstreno": 2003,
+        "director": "Sofia Coppola",
+        "ganadorOscar": true,
+        "generos": [
+            "Comedia",
+            "Drama"
+        ],
+        "costoInicial": 4000000,
+        "recaudacion": 118685453,
+        "rentable": null,
+        "sinopsis": "Dos estadounidenses solitarios en Tokio, un actor en crisis de mediana edad y una joven recién graduada, forman un vínculo improbable mientras navegan por la alienación cultural y personal en la bulliciosa ciudad.",
+        "duracionMinutos": 102,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Bill Murray",
+            "Scarlett Johansson",
+            "Giovanni Ribisi"
+        ]
+    },
+    {
+        "id": "4",
+        "titulo": "Gladiador",
+        "fechaEstreno": 2000,
+        "director": "Ridley Scott",
+        "ganadorOscar": true,
+        "generos": [
+            "Acción",
+            "Drama",
+            "Aventura"
+        ],
+        "costoInicial": 103000000,
+        "recaudacion": 465500000,
+        "rentable": null,
+        "sinopsis": "Un general romano leal es traicionado por el emperador corrupto, reducido a la esclavitud y convertido en gladiador, mientras busca venganza por la muerte de su familia y el honor de Roma.",
+        "duracionMinutos": 155,
+        "paisOrigen": "Estados Unidos / Reino Unido",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Russell Crowe",
+            "Joaquin Phoenix",
+            "Connie Nielsen",
+            "Oliver Reed"
+        ]
+    },
+    {
+        "id": "5",
+        "titulo": "Manchester by the Sea",
+        "fechaEstreno": 2016,
+        "director": "Kenneth Lonergan",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama"
+        ],
+        "costoInicial": 9000000,
+        "recaudacion": 79000000,
+        "rentable": null,
+        "sinopsis": "Un janitor atormentado por la culpa regresa a su pueblo natal para cuidar de su sobrino adolescente tras la muerte de su hermano, confrontando un pasado trágico que lo mantiene atrapado en el duelo.",
+        "duracionMinutos": 137,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Casey Affleck",
+            "Michelle Williams",
+            "Lucas Hedges",
+            "Kyle Chandler"
+        ]
+    },
+    {
+        "id": "6",
+        "titulo": "Porco Rosso",
+        "fechaEstreno": 1992,
+        "director": "Hayao Miyazaki",
+        "ganadorOscar": false,
+        "generos": [
+            "Animación",
+            "Aventura",
+            "Comedia"
+        ],
+        "costoInicial": 6000000,
+        "recaudacion": 44580477,
+        "rentable": null,
+        "sinopsis": "En la Italia de los años 30, un piloto de la Primera Guerra Mundial maldito con apariencia de cerdo caza piratas aéreos en el Adriático, mientras lidia con su pasado y un joven mecánico que lo admira.",
+        "duracionMinutos": 93,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Shûichirô Moriyama",
+            "Tokiko Katô",
+            "Akemi Okamura",
+            "Akio Ōtsuka"
+        ]
+    },
+    {
+        "id": "7",
+        "titulo": "Linda Linda Linda",
+        "fechaEstreno": 2005,
+        "director": "Nobuhiro Yamashita",
+        "ganadorOscar": false,
+        "generos": [
+            "Comedia",
+            "Drama",
+            "Música"
+        ],
+        "costoInicial": 1000000,
+        "recaudacion": 5000000,
+        "rentable": null,
+        "sinopsis": "Tres días antes del festival escolar, un grupo de chicas recluta a una estudiante coreana de intercambio como vocalista para su banda de rock, luchando por aprender canciones de The Blue Hearts, incluyendo 'Linda Linda', mientras fortalecen su amistad.",
+        "duracionMinutos": 114,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Bae Doona",
+            "Aki Maeda",
+            "Yû Kashii",
+            "Shiori Sekine"
+        ]
+    },
+    {
+        "id": "8",
+        "titulo": "Kimi no Nawa",
+        "fechaEstreno": 2016,
+        "director": "Makoto Shinkai",
+        "ganadorOscar": false,
+        "generos": [
+            "Animación",
+            "Drama",
+            "Fantasía"
+        ],
+        "costoInicial": 8000000,
+        "recaudacion": 400000000,
+        "rentable": null,
+        "sinopsis": "Dos adolescentes, una chica de un pueblo rural y un chico de Tokio, descubren que están intercambiando cuerpos de manera misteriosa, lo que los lleva a una conexión profunda y a un viaje para encontrarse en la realidad, mientras intentan prevenir una catástrofe inminente.",
+        "duracionMinutos": 106,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Ryûnosuke Kamiki",
+            "Mone Kamishiraishi",
+            "Ryo Narita",
+            "Aoi Yûki"
+        ]
+    },
+    {
+        "id": "9",
+        "titulo": "La Bruja de Blair",
+        "fechaEstreno": 1999,
+        "director": "Daniel Myrick, Eduardo Sánchez",
+        "ganadorOscar": false,
+        "generos": [
+            "Terror",
+            "Misterio"
+        ],
+        "costoInicial": 60000,
+        "recaudacion": 248639099,
+        "rentable": null,
+        "sinopsis": "Tres estudiantes de cine desaparecen en los bosques de Maryland mientras investigan la leyenda de la Bruja de Blair, dejando atrás solo sus cintas de video que revelan un terror creciente y eventos inexplicables.",
+        "duracionMinutos": 81,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Heather Donahue",
+            "Michael C. Williams",
+            "Joshua Leonard"
+        ]
+    },
+    {
+        "id": "10",
+        "titulo": "Million Dollar Baby",
+        "fechaEstreno": 2004,
+        "director": "Clint Eastwood",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama",
+            "Deporte"
+        ],
+        "costoInicial": 30000000,
+        "recaudacion": 216763646,
+        "rentable": null,
+        "sinopsis": "Una joven camarera con un sueño de boxeo convence a un entrenador reacio de que la prepare para convertirse en campeona, formando un lazo padre-hija que transforma sus vidas en medio de triunfos y tragedias.",
+        "duracionMinutos": 132,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Clint Eastwood",
+            "Hilary Swank",
+            "Morgan Freeman",
+            "Jay Baruchel"
+        ]
+    },
+    {
+        "id": "11",
+        "titulo": "Salvando al Soldado Ryan",
+        "fechaEstreno": 1998,
+        "director": "Steven Spielberg",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama",
+            "Bélico"
+        ],
+        "costoInicial": 70000000,
+        "recaudacion": 481800867,
+        "rentable": null,
+        "sinopsis": "Tras el Día D, un capitán del Ejército de EE.UU. lidera a su escuadrón a través de la Francia ocupada por los nazis para encontrar y rescatar a un paracaidista cuyo regreso a casa podría significar el consuelo para tres hermanos que murieron en combate.",
+        "duracionMinutos": 169,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Tom Hanks",
+            "Tom Sizemore",
+            "Edward Burns",
+            "Barry Pepper"
+        ]
+    },
+    {
+        "id": "12",
+        "titulo": "Neon Genesis Evangelion: The End of Evangelion",
+        "fechaEstreno": 1997,
+        "director": "Hideaki Anno, Kazuya Tsurumaki",
+        "ganadorOscar": false,
+        "generos": [
+            "Animación",
+            "Ciencia ficción",
+            "Acción"
+        ],
+        "costoInicial": 20000000,
+        "recaudacion": 1588016000,
+        "rentable": null,
+        "sinopsis": "En un apocalíptico clímax, los pilotos de Evangelion enfrentan la Iniciación de Instrumentality Humano, un plan para fusionar las almas humanas, mientras Shinji Ikari lucha por su existencia y el destino de la humanidad en medio de traiciones y revelaciones devastadoras.",
+        "duracionMinutos": 87,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Megumi Ogata",
+            "Megumi Hayashibara",
+            "Yûko Miyamura",
+            "Kotono Mitsuishi"
+        ]
+    },
+    {
+        "id": "13",
+        "titulo": "Casino",
+        "fechaEstreno": 1995,
+        "director": "Martin Scorsese",
+        "ganadorOscar": false,
+        "generos": [
+            "Crimen",
+            "Drama"
+        ],
+        "costoInicial": 40000000,
+        "recaudacion": 116112375,
+        "rentable": null,
+        "sinopsis": "Un astuto gerente de casino en Las Vegas navega el mundo del juego controlado por la mafia, lidiando con ambiciones personales, traiciones y el declive de su matrimonio con una estafadora carismática.",
+        "duracionMinutos": 178,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Robert De Niro",
+            "Sharon Stone",
+            "Joe Pesci",
+            "James Woods"
+        ]
+    },
+    {
+        "id": "14",
+        "titulo": "Perfume de Mujer",
+        "fechaEstreno": 1992,
+        "director": "Martin Brest",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama"
+        ],
+        "costoInicial": 25000000,
+        "recaudacion": 145239390,
+        "rentable": null,
+        "sinopsis": "Un estudiante de preparatoria acepta un trabajo temporal cuidando a un coronel ciego y gruñón durante un fin de semana en Nueva York, donde aprende lecciones de honor, coraje y el verdadero significado de la vida a través de aventuras inesperadas.",
+        "duracionMinutos": 156,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Al Pacino",
+            "Chris O'Donnell",
+            "James Rebhorn",
+            "Gabrielle Anwar"
+        ]
+    },
+    {
+        "id": "15",
+        "titulo": "Esperando la Carroza",
+        "fechaEstreno": 1985,
+        "director": "Alejandro Doria",
+        "ganadorOscar": false,
+        "generos": [
+            "Comedia"
+        ],
+        "costoInicial": 1000000,
+        "recaudacion": 5000000,
+        "rentable": null,
+        "sinopsis": "La familia Musicardi se reúne en una comida dominical caótica, donde tensiones y resentimientos estallan mientras intentan lidiar con la anciana Mamá Cora, culminando en un malentendido hilarante que los lleva a creer en su muerte y organiza un funeral prematuro lleno de absurdos y revelaciones.",
+        "duracionMinutos": 105,
+        "paisOrigen": "Argentina",
+        "idiomaOriginal": "Español",
+        "repartoPrincipales": [
+            "Luis Brandoni",
+            "China Zorrilla",
+            "Antonio Gasalla",
+            "Julio De Grazia"
+        ]
+    },
+    {
+        "id": "16",
+        "titulo": "Paprika",
+        "fechaEstreno": 2006,
+        "director": "Satoshi Kon",
+        "ganadorOscar": false,
+        "generos": [
+            "Animación",
+            "Ciencia ficción",
+            "Suspenso"
+        ],
+        "costoInicial": 5000000,
+        "recaudacion": 5000000,
+        "rentable": null,
+        "sinopsis": "Una psicoterapeuta utiliza un dispositivo que permite entrar en los sueños para tratar a sus pacientes, pero cuando la tecnología es robada, los límites entre la realidad y el sueño se desdibujan, desencadenando un caos psicológico que amenaza la mente humana.",
+        "duracionMinutos": 90,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Megumi Hayashibara",
+            "Tôru Furuya",
+            "Kôichi Yamadera",
+            "Katsunosuke Hori"
+        ]
+    },
+    {
+        "id": "17",
+        "titulo": "1917",
+        "fechaEstreno": 2019,
+        "director": "Sam Mendes",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama",
+            "Bélico",
+            "Acción"
+        ],
+        "costoInicial": 95000000,
+        "recaudacion": 374733942,
+        "rentable": null,
+        "sinopsis": "Durante la Primera Guerra Mundial, dos soldados británicos reciben una misión imposible: cruzar territorio enemigo para entregar un mensaje que podría salvar a 1.600 hombres, enfrentando peligros mortales en una carrera contrarreloj.",
+        "duracionMinutos": 119,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "George MacKay",
+            "Dean-Charles Chapman",
+            "Mark Strong",
+            "Andrew Scott"
+        ]
+    },
+    {
+        "id": "18",
+        "titulo": "Parasite",
+        "fechaEstreno": 2019,
+        "director": "Bong Joon-ho",
+        "ganadorOscar": true,
+        "generos": [
+            "Comedia",
+            "Drama",
+            "Suspenso"
+        ],
+        "costoInicial": 11000000,
+        "recaudacion": 258935147,
+        "rentable": null,
+        "sinopsis": "Una familia empobrecida se infiltra ingeniosamente en la vida de una familia adinerada, haciéndose pasar por empleados calificados, hasta que sus engaños desencadenan una serie de eventos inesperados que revelan tensiones de clase y traiciones.",
+        "duracionMinutos": 132,
+        "paisOrigen": "Corea del Sur",
+        "idiomaOriginal": "Coreano",
+        "repartoPrincipales": [
+            "Song Kang-ho",
+            "Lee Sun-kyun",
+            "Cho Yeo-jeong",
+            "Choi Woo-shik"
+        ]
+    },
+    {
+        "id": "19",
+        "titulo": "Lighthouse",
+        "fechaEstreno": 2019,
+        "director": "Robert Eggers",
+        "ganadorOscar": false,
+        "generos": [
+            "Drama",
+            "Terror",
+            "Misterio"
+        ],
+        "costoInicial": 11000000,
+        "recaudacion": 18300000,
+        "rentable": null,
+        "sinopsis": "En una isla remota a finales del siglo XIX, dos guardianes de un faro quedan atrapados por una tormenta, enfrentándose a la locura, al aislamiento y a visiones perturbadoras que desdibujan la línea entre la realidad y el mito.",
+        "duracionMinutos": 109,
+        "paisOrigen": "Estados Unidos / Canadá",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Robert Pattinson",
+            "Willem Dafoe",
+            "Valeriia Karaman"
+        ]
+    },
+    {
+        "id": "20",
+        "titulo": "Tiburón",
+        "fechaEstreno": 1975,
+        "director": "Steven Spielberg",
+        "ganadorOscar": true,
+        "generos": [
+            "Terror",
+            "Suspenso",
+            "Aventura"
+        ],
+        "costoInicial": 7000000,
+        "recaudacion": 470653000,
+        "rentable": null,
+        "sinopsis": "Un jefe de policía, un biólogo marino y un cazador de tiburones unen fuerzas para detener a un gran tiburón blanco que aterroriza a una comunidad costera, enfrentándose a sus propios miedos en una lucha desesperada por sobrevivir.",
+        "duracionMinutos": 124,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Roy Scheider",
+            "Robert Shaw",
+            "Richard Dreyfuss",
+            "Lorraine Gary"
+        ]
+    },
+    {
+        "id": "21",
+        "titulo": "Rocky",
+        "fechaEstreno": 1976,
+        "director": "John G. Avildsen",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama",
+            "Deporte"
+        ],
+        "costoInicial": 1000000,
+        "recaudacion": 225000000,
+        "rentable": null,
+        "sinopsis": "Un boxeador de poca monta de Filadelfia recibe una oportunidad única de enfrentarse al campeón mundial de peso pesado, entrenando con determinación para demostrar su valía, mientras encuentra amor y propósito en su vida.",
+        "duracionMinutos": 119,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Sylvester Stallone",
+            "Talia Shire",
+            "Burt Young",
+            "Carl Weathers"
+        ]
+    },
+    {
+        "id": "22",
+        "titulo": "Napoleón",
+        "fechaEstreno": 2023,
+        "director": "Ridley Scott",
+        "ganadorOscar": false,
+        "generos": [
+            "Drama",
+            "Aventura",
+            "Bélico"
+        ],
+        "costoInicial": 200000000,
+        "recaudacion": 221000000,
+        "rentable": null,
+        "sinopsis": "La épica ascensión y caída de Napoleón Bonaparte, desde sus victorias militares hasta su exilio, mientras su tumultuosa relación con Josefina revela las ambiciones y contradicciones de un líder que cambió la historia.",
+        "duracionMinutos": 158,
+        "paisOrigen": "Estados Unidos / Reino Unido",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Joaquin Phoenix",
+            "Vanessa Kirby",
+            "Tahar Rahim",
+            "Rupert Everett"
+        ]
+    },
+    {
+        "id": "23",
+        "titulo": "Me quiero comer tu páncreas",
+        "fechaEstreno": 2018,
+        "director": "Shinichiro Ushijima",
+        "ganadorOscar": false,
+        "generos": [
+            "Animación",
+            "Drama",
+            "Romance"
+        ],
+        "costoInicial": 3000000,
+        "recaudacion": 32000000,
+        "rentable": null,
+        "sinopsis": "Un estudiante reservado encuentra un diario que revela la enfermedad terminal de una compañera de clase, lo que lo lleva a formar un vínculo profundo mientras ella enfrenta su destino con optimismo, enseñándole a valorar la vida.",
+        "duracionMinutos": 108,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Mahiro Takasugi",
+            "Lynn",
+            "Yukiyo Fujii",
+            "Yuma Uchida"
+        ]
+    },
+    {
+        "id": "24",
+        "titulo": "Man from Earth",
+        "fechaEstreno": 2007,
+        "director": "Richard Schenkman",
+        "ganadorOscar": false,
+        "generos": [
+            "Drama",
+            "Ciencia ficción"
+        ],
+        "costoInicial": 200000,
+        "recaudacion": 1000000,
+        "rentable": null,
+        "sinopsis": "Un profesor que renuncia a su trabajo reúne a sus colegas para revelar un secreto extraordinario: afirma ser un hombre de 14.000 años que ha vivido desde la prehistoria, desencadenando un debate intelectual sobre la vida, la fe y la historia.",
+        "duracionMinutos": 87,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "David Lee Smith",
+            "Tony Todd",
+            "John Billingsley",
+            "Ellen Crawford"
+        ]
+    },
+    {
+        "id": "25",
+        "titulo": "El código Da Vinci",
+        "fechaEstreno": 2006,
+        "director": "Ron Howard",
+        "ganadorOscar": false,
+        "generos": [
+            "Suspenso",
+            "Misterio"
+        ],
+        "costoInicial": 125000000,
+        "recaudacion": 758239851,
+        "rentable": null,
+        "sinopsis": "Un simbólogo y una criptóloga investigan un asesinato en el Louvre, descubriendo una conspiración que conecta obras de arte, códigos secretos y un misterio religioso que podría sacudir los cimientos del cristianismo.",
+        "duracionMinutos": 149,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Tom Hanks",
+            "Audrey Tautou",
+            "Ian McKellen",
+            "Jean Reno"
+        ]
+    },
+    {
+        "id": "26",
+        "titulo": "El viaje de Chihiro",
+        "fechaEstreno": 2001,
+        "director": "Hayao Miyazaki",
+        "ganadorOscar": true,
+        "generos": [
+            "Animación",
+            "Familiar",
+            "Fantasía"
+        ],
+        "costoInicial": 19000000,
+        "recaudacion": 395800000,
+        "rentable": null,
+        "sinopsis": "Una niña de diez años se adentra en un mundo mágico lleno de espíritus y criaturas extrañas, donde debe trabajar en una casa de baños sobrenatural para liberar a sus padres transformados y encontrar el camino de regreso a casa.",
+        "duracionMinutos": 125,
+        "paisOrigen": "Japón",
+        "idiomaOriginal": "Japonés",
+        "repartoPrincipales": [
+            "Rumi Hiiragi",
+            "Miyu Irino",
+            "Mari Natsuki",
+            "Takashi Naitô"
+        ]
+    },
+    {
+        "id": "27",
+        "titulo": "Cabo del miedo",
+        "fechaEstreno": 1991,
+        "director": "Martin Scorsese",
+        "ganadorOscar": false,
+        "generos": [
+            "Suspenso",
+            "Crimen"
+        ],
+        "costoInicial": 35000000,
+        "recaudacion": 182300000,
+        "rentable": null,
+        "sinopsis": "Un exconvicto psicópata, liberado tras catorce años en prisión, busca vengarse del abogado defensor que lo traicionó, acechando a su familia en un juego de terror psicológico que pone a prueba su cordura y valentía.",
+        "duracionMinutos": 128,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "Robert De Niro",
+            "Nick Nolte",
+            "Jessica Lange",
+            "Juliette Lewis"
+        ]
+    }
+]
