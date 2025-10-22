@@ -1,0 +1,20 @@
+{
+    "id": "",
+    "titulo": "ESTO ANDA O NO ANDA",
+    "fechaEstreno": 22,
+    "director": "Charlotte Welnnkjnkjnkjnls",
+    "ganadorOscar": false,
+    "generos": [
+      "3"
+    ],
+    "campoNuevo": "hola",
+    "costoInicial": 22,
+    "recaudacion": 12000000,
+    "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+    "duracionMinutos": 101,
+    "paisOrigen": "Reino Unido / Estados Unidos",
+    "idiomaOriginal": "Inglés",
+    "repartoPrincipales": [
+      "333"
+    ]
+}
