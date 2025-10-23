@@ -1,7 +1,8 @@
 function logger(req, res, next) {
     const { method, url } = req;
-    console.log(`[${time}] ${method} ${url}`);
-    next(); // importante: continúa con el siguiente middleware o ruta
+    const timestamp = new Date().toISOString(); 
+    console.log(`[${timestamp}] ${method} ${url}`);
+    next();
 }
 
 module.exports = logger;

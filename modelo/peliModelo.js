@@ -77,6 +77,7 @@ function agregarPelicula(ObjetoPeliculas) {
 
 
 function eliminarPelicula(id){
+    console.log("dentro de eliminar pleicula")
     //los id ya no quedarían ordenados(bueno o malo nose, no se repiten almenos);
     //Devuelve un nuevo array con los elementos que pasaron la condición
     const peliELiminada = contenidoPeli.filter(peli => peli.id !== id);

@@ -1,0 +1,28 @@
+{
+  "name": "apiovelarcamilo",
+  "version": "1.0.0",
+  "description": "Tratando de lograr funcionar y crear una API con la temática de Peículas ======= # Validaciones mínimas sugeridas(LISTO) @ Al crear: - No permitir campos vacíos. - Verificar que no exista un registro con el mismo ID.",
+  "main": "index.js",
+  "scripts": {
+    "test": "start",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovelar-C/API-de-las-Mejores-Pel-culas-Del-Mundo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovelar-C/API-de-las-Mejores-Pel-culas-Del-Mundo/issues"
+  },
+  "homepage": "https://github.com/ovelar-C/API-de-las-Mejores-Pel-culas-Del-Mundo#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

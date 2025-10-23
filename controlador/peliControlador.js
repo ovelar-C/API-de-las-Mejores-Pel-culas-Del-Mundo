@@ -2,6 +2,7 @@
 const { validarNumero, validarLosCampos } = require('../middlewares/validateData.js');
 const peliModelo = require('../modelo/peliModelo.js');
 
+//OK
 function listarTodos(req, res) {
     //las mejores pelis
     const peliculas = peliModelo.traerTodos();
@@ -14,12 +15,12 @@ function listarTodos(req, res) {
         console.log("error");
     }
 }
-
+//OK
 function obtenerPorID(req, res) {
     const peliculaId = parseInt(req.params.id);
 
     if (!validarNumero(peliculaId)) {
-        res.status(400).json({ mensaje: "id debe ser un numero positivo valido" });
+        res.status(400).json({ mensaje: "id debe ser un NÚMERO POSITIVO VÁLIDO" });
         return;
     }
     const pelicula = peliModelo.traerPorID(peliculaId);
@@ -39,7 +40,7 @@ function obtenerPorFiltrado(req, res) {
 }
 //----------------------------------------------------
 
-
+//OK
 function sumarPelicula(req, res) {
     console.log("dentro de la funcion sumar pelicula");
     //desestructuracion del objeto body
@@ -72,11 +73,13 @@ function sumarPelicula(req, res) {
         idiomaOriginal,
         repartoPrincipales
     };
+    console.log("llamando a validar campos");
     let validarPeli = validarLosCampos(atributosPelis);
 
     if(!validarPeli){
-        console.log("comppletar campos vacios");
-        res.status(400).json({mensaje: "completar campos con datos válidos"});
+        console.log("completar campos vacios");
+        res.status(400).json({mensaje: "completar todos los campos con datos válidos"});
+        return;
     }
     const peliculas = peliModelo.agregarPelicula(atributosPelis);
     
@@ -88,8 +91,11 @@ function sumarPelicula(req, res) {
 }
 
 function borrarPelicula(req,res){
+        console.log("dentro de borrar pelicula");
+
     const peliculaId = parseInt(req.params.id);
-    const borrarPeli = peliModelo.eliminarPelicula(peliculaId)
+    const borrarPeli = peliModelo.eliminarPelicula(peliculaId);
+
     if(!borrarPeli){
         res.status(404).json({mensaje: "error al eliminar la pelicula"});
     }else{

@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "titulo": "El Padrino 2",
         "fechaEstreno": 1974,
         "director": "Francis Ford Coppola",
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "id": "2",
+        "id": 2,
         "titulo": "Aftersun",
         "fechaEstreno": 2022,
         "director": "Charlotte Wells",
@@ -46,7 +46,7 @@
         ]
     },
     {
-        "id": "3",
+        "id": 3,
         "titulo": "Lost in Translation",
         "fechaEstreno": 2003,
         "director": "Sofia Coppola",
@@ -69,7 +69,7 @@
         ]
     },
     {
-        "id": "4",
+        "id": 4,
         "titulo": "Gladiador",
         "fechaEstreno": 2000,
         "director": "Ridley Scott",
@@ -94,7 +94,7 @@
         ]
     },
     {
-        "id": "5",
+        "id": 5,
         "titulo": "Manchester by the Sea",
         "fechaEstreno": 2016,
         "director": "Kenneth Lonergan",
@@ -117,7 +117,7 @@
         ]
     },
     {
-        "id": "6",
+        "id": 6,
         "titulo": "Porco Rosso",
         "fechaEstreno": 1992,
         "director": "Hayao Miyazaki",
@@ -142,7 +142,7 @@
         ]
     },
     {
-        "id": "7",
+        "id": 7,
         "titulo": "Linda Linda Linda",
         "fechaEstreno": 2005,
         "director": "Nobuhiro Yamashita",
@@ -167,7 +167,7 @@
         ]
     },
     {
-        "id": "8",
+        "id": 8,
         "titulo": "Kimi no Nawa",
         "fechaEstreno": 2016,
         "director": "Makoto Shinkai",
@@ -192,7 +192,7 @@
         ]
     },
     {
-        "id": "9",
+        "id": 9,
         "titulo": "La Bruja de Blair",
         "fechaEstreno": 1999,
         "director": "Daniel Myrick, Eduardo Sánchez",
@@ -215,7 +215,7 @@
         ]
     },
     {
-        "id": "10",
+        "id": 10,
         "titulo": "Million Dollar Baby",
         "fechaEstreno": 2004,
         "director": "Clint Eastwood",
@@ -239,7 +239,7 @@
         ]
     },
     {
-        "id": "11",
+        "id": 11,
         "titulo": "Salvando al Soldado Ryan",
         "fechaEstreno": 1998,
         "director": "Steven Spielberg",
@@ -263,7 +263,7 @@
         ]
     },
     {
-        "id": "12",
+        "id": 12,
         "titulo": "Neon Genesis Evangelion: The End of Evangelion",
         "fechaEstreno": 1997,
         "director": "Hideaki Anno, Kazuya Tsurumaki",
@@ -288,7 +288,7 @@
         ]
     },
     {
-        "id": "13",
+        "id": 13,
         "titulo": "Casino",
         "fechaEstreno": 1995,
         "director": "Martin Scorsese",
@@ -312,7 +312,7 @@
         ]
     },
     {
-        "id": "14",
+        "id": 14,
         "titulo": "Perfume de Mujer",
         "fechaEstreno": 1992,
         "director": "Martin Brest",
@@ -335,7 +335,7 @@
         ]
     },
     {
-        "id": "15",
+        "id": 15,
         "titulo": "Esperando la Carroza",
         "fechaEstreno": 1985,
         "director": "Alejandro Doria",
@@ -358,7 +358,7 @@
         ]
     },
     {
-        "id": "16",
+        "id": 16,
         "titulo": "Paprika",
         "fechaEstreno": 2006,
         "director": "Satoshi Kon",
@@ -383,7 +383,7 @@
         ]
     },
     {
-        "id": "17",
+        "id": 17,
         "titulo": "1917",
         "fechaEstreno": 2019,
         "director": "Sam Mendes",
@@ -408,7 +408,7 @@
         ]
     },
     {
-        "id": "18",
+        "id": 18,
         "titulo": "Parasite",
         "fechaEstreno": 2019,
         "director": "Bong Joon-ho",
@@ -433,7 +433,7 @@
         ]
     },
     {
-        "id": "19",
+        "id": 19,
         "titulo": "Lighthouse",
         "fechaEstreno": 2019,
         "director": "Robert Eggers",
@@ -457,7 +457,7 @@
         ]
     },
     {
-        "id": "20",
+        "id": 20,
         "titulo": "Tiburón",
         "fechaEstreno": 1975,
         "director": "Steven Spielberg",
@@ -482,7 +482,7 @@
         ]
     },
     {
-        "id": "21",
+        "id": 21,
         "titulo": "Rocky",
         "fechaEstreno": 1976,
         "director": "John G. Avildsen",
@@ -506,7 +506,7 @@
         ]
     },
     {
-        "id": "22",
+        "id": 22,
         "titulo": "Napoleón",
         "fechaEstreno": 2023,
         "director": "Ridley Scott",
@@ -531,7 +531,7 @@
         ]
     },
     {
-        "id": "23",
+        "id": 23,
         "titulo": "Me quiero comer tu páncreas",
         "fechaEstreno": 2018,
         "director": "Shinichiro Ushijima",
@@ -556,7 +556,7 @@
         ]
     },
     {
-        "id": "24",
+        "id": 24,
         "titulo": "Man from Earth",
         "fechaEstreno": 2007,
         "director": "Richard Schenkman",
@@ -580,7 +580,7 @@
         ]
     },
     {
-        "id": "25",
+        "id": 25,
         "titulo": "El código Da Vinci",
         "fechaEstreno": 2006,
         "director": "Ron Howard",
@@ -604,7 +604,7 @@
         ]
     },
     {
-        "id": "26",
+        "id": 26,
         "titulo": "El viaje de Chihiro",
         "fechaEstreno": 2001,
         "director": "Hayao Miyazaki",
@@ -629,7 +629,7 @@
         ]
     },
     {
-        "id": "27",
+        "id": 27,
         "titulo": "Cabo del miedo",
         "fechaEstreno": 1991,
         "director": "Martin Scorsese",
@@ -650,6 +650,126 @@
             "Nick Nolte",
             "Jessica Lange",
             "Juliette Lewis"
+        ]
+    },
+    {
+        "id": 28,
+        "titulo": "ESTO ANDA O NO ANDA",
+        "fechaEstreno": 22,
+        "director": "Charlotte Welnnkjnkjnkjnls",
+        "ganadorOscar": false,
+        "generos": [
+            "3"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "333"
+        ]
+    },
+    {
+        "id": 29,
+        "titulo": "",
+        "fechaEstreno": 22,
+        "director": "Charlotte Welnnkjnkjnkjnls",
+        "ganadorOscar": false,
+        "generos": [
+            "3"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "333"
+        ]
+    },
+    {
+        "id": 30,
+        "titulo": "",
+        "fechaEstreno": 22,
+        "director": "Charlotte Welnnkjnkjnkjnls",
+        "ganadorOscar": false,
+        "generos": [
+            "3"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "333"
+        ]
+    },
+    {
+        "id": 32,
+        "titulo": "",
+        "fechaEstreno": 22,
+        "director": "Charlotte Welnnkjnkjnkjnls",
+        "ganadorOscar": false,
+        "generos": [
+            "3"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "333"
+        ]
+    },
+    {
+        "id": 33,
+        "titulo": "34",
+        "fechaEstreno": 89,
+        "director": "Charlotte Welnnkjnkjnkjnls",
+        "ganadorOscar": 5,
+        "generos": [
+            "3"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "333"
+        ]
+    },
+    {
+        "id": 34,
+        "titulo": "34",
+        "fechaEstreno": 89,
+        "director": "Charlotte Welnnkjnkjnkjnls",
+        "ganadorOscar": false,
+        "generos": [
+            "s"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "333"
         ]
     }
 ]
