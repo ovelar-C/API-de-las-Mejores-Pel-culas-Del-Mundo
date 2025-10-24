@@ -33,10 +33,28 @@ function obtenerPorID(req, res) {
 //----------------------------------------------------
 function obtenerPorFiltrado(req, res) {
     const { genero, actor, rentable } = req.query;
-    const filtros = peliModelo.filtrarCampos(generos,reparto,rentable);
-//hola
+    const filtros = {};
 
-    
+    if (genero) filtros.generos = genero;
+    if (actor) filtros.repartoPrincipales = actor;
+    if (rentable) filtros.rentable = rentable;
+    console.log(filtros.generos,filtros.repartoPrincipales)
+
+    console.log("llamamos a vlaidar campos");
+    const valido = validarLosCampos(filtros);
+    if (!valido) {
+        console.log("parametros invalidos");
+        res.status(400).json({ mensaje: "error" });
+    } else {
+        console.log("parametros validos");
+        res.status(200).json(valido);
+    }
+
+
+   // const filtros = peliModelo.filtrarCampos(genero, actor, rentable);
+    //hola
+
+
 }
 //----------------------------------------------------
 
@@ -76,13 +94,13 @@ function sumarPelicula(req, res) {
     console.log("llamando a validar campos");
     let validarPeli = validarLosCampos(atributosPelis);
 
-    if(!validarPeli){
+    if (!validarPeli) {
         console.log("completar campos vacios");
-        res.status(400).json({mensaje: "completar todos los campos con datos válidos"});
+        res.status(400).json({ mensaje: "completar todos los campos con datos válidos" });
         return;
     }
     const peliculas = peliModelo.agregarPelicula(atributosPelis);
-    
+
     if (peliculas) {
         res.status(202).json(peliculas);
     } else {
@@ -90,41 +108,41 @@ function sumarPelicula(req, res) {
     }
 }
 
-function borrarPelicula(req,res){
-        console.log("dentro de borrar pelicula");
+function borrarPelicula(req, res) {
+    console.log("dentro de borrar pelicula");
 
     const peliculaId = parseInt(req.params.id);
     const borrarPeli = peliModelo.eliminarPelicula(peliculaId);
 
-    if(!borrarPeli){
-        res.status(404).json({mensaje: "error al eliminar la pelicula"});
-    }else{
+    if (!borrarPeli) {
+        res.status(404).json({ mensaje: "error al eliminar la pelicula" });
+    } else {
         res.status(200).json(borrarPeli);
     }
 }
 
 //----------------------------------------------------
-function modificarPelicula(req,res){
+function modificarPelicula(req, res) {
     const peliId = parseInt(req.params.id);
-    const {/*datos a actualizar*/} = req.body;
+    const {/*datos a actualizar*/ } = req.body;
     const datosModificar = {
         /*los datos a actualizar*/
     }
     //validación de la id
-    if(!validarNumero(peliId)){
-        res.status(400).json({mensaje: "ID invalido"});
+    if (!validarNumero(peliId)) {
+        res.status(400).json({ mensaje: "ID invalido" });
     }
     //validación de los campos
     const valido = validarLosCampos(datosModificar);
-    if(!valido){
-        res.status(400).json({mensaje: "Completar todos los campos con valores válidos por favor"});
+    if (!valido) {
+        res.status(400).json({ mensaje: "Completar todos los campos con valores válidos por favor" });
     }
     //si pasa todo OK
-    const peli = peliModelo.actualizarPelicula(datosModificar,peliId);
+    const peli = peliModelo.actualizarPelicula(datosModificar, peliId);
 
-    if(!peli){
-        res.status(400).json({mensaje: " error al actulizar los datos"});
-    }else{
+    if (!peli) {
+        res.status(400).json({ mensaje: " error al actulizar los datos" });
+    } else {
         res.status(200).json(peli);
     }
 }
