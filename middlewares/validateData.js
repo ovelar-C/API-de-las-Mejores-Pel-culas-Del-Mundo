@@ -29,6 +29,7 @@ function validarString(clave, valor) {
     console.log("dentro de de validarString");
     //me mandan un clave y un valor
     const nuevoValor = valor.toString();
+    console.log(nuevoValor);
     //vemos si clave esta en el array string
     //vemos tambien si está vacío el valor
     if (nuevoValor.trim() !== "") {

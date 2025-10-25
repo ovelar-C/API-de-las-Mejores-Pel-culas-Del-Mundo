@@ -734,10 +734,10 @@
     },
     {
         "id": 33,
-        "titulo": "34",
-        "fechaEstreno": 89,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": 5,
+        "titulo": 3,
+        "fechaEstreno": 3,
+        "director": "Tupac",
+        "ganadorOscar": false,
         "generos": [
             "3"
         ],
@@ -750,86 +750,7 @@
         "idiomaOriginal": "Inglés",
         "repartoPrincipales": [
             "333"
-        ]
-    },
-    {
-        "id": 34,
-        "titulo": "34",
-        "fechaEstreno": 89,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "s"
         ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "333"
-        ]
-    },
-    {
-        "id": 35,
-        "titulo": "34",
-        "fechaEstreno": 89,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "s"
-        ],
-        "costoInicial": 3,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "fd"
-        ]
-    },
-    {
-        "id": 36,
-        "titulo": "34",
-        "fechaEstreno": 89,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "ss"
-        ],
-        "costoInicial": 3,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "hola"
-        ]
-    },
-    {
-        "id": 37,
-        "titulo": "34",
-        "fechaEstreno": 89,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "ss"
-        ],
-        "costoInicial": 3,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "hola"
-        ]
+        "peliId": 33
     }
 ]

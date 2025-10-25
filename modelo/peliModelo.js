@@ -30,6 +30,7 @@ function traerPorID(id) {
 function filtrarCampos({generos, repartoPrincipales}) {
     //rentable
     let resultado = contenidoPeli;
+    //filtramos las pelis por genero
     if (generos) {
         resultado = resultado.filter(peli => {
             if (!peli.generos) return false;
@@ -38,6 +39,7 @@ function filtrarCampos({generos, repartoPrincipales}) {
             return generosStr.toLowerCase().includes(generos.toLowerCase());
         });
     }
+    //ya filtrado genero, filtramos por reparto
     if (repartoPrincipales) {
         resultado = resultado.filter(peli => {
             if (!peli.repartoPrincipales) return false;
@@ -45,6 +47,8 @@ function filtrarCampos({generos, repartoPrincipales}) {
             return repartoStr.toLowerCase().includes(repartoPrincipales.toLowerCase());
         });
     }
+
+    if(resultado.length === 0) return [];
 
     const resultadoFinal = resultado.map(peli => ({
         id: peli.id,
@@ -94,7 +98,6 @@ function agregarPelicula(ObjetoPeliculas) {
 
 function eliminarPelicula(id){
     console.log("dentro de eliminar pleicula")
-    //los id ya no quedarían ordenados(bueno o malo nose, no se repiten almenos);
     //Devuelve un nuevo array con los elementos que pasaron la condición
     const peliELiminada = contenidoPeli.filter(peli => peli.id !== id);
 
@@ -110,9 +113,20 @@ function eliminarPelicula(id){
 
 //----------------------------------------------------
 function actualizarPelicula(datosActualizar,peliId){
-    //usar put o patch
     //debo primero encontrar la peli con el id
     //despues poder reemplazar los datos
+    const indice =contenidoPeli.findIndex(peli => peli.id == peliId);
+    //esto devuelve -1 si no encontro
+    if(indice === -1) return null
+
+    contenidoPeli[indice] = {... contenidoPeli[indice], ...datosActualizar,peliId}
+     try {
+        fs.writeFileSync(ubicacionArchivo, JSON.stringify(contenidoPeli, null, 4), 'utf-8');
+        console.log("Película actualizada y guardado en el archivo");
+    } catch (error) {
+        console.error("Error al escribir en el archivo json", error.message);
+    }
+    return contenidoPeli[indice];
    
 }
 //----------------------------------------------------
