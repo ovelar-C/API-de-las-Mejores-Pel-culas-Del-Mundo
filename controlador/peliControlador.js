@@ -4,7 +4,6 @@ const peliModelo = require('../modelo/peliModelo.js');
 
 //OK
 function listarTodos(req, res) {
-    //las mejores pelis
     const peliculas = peliModelo.traerTodos();
     console.log("Se llamó a listarTodos()");
 
@@ -32,30 +31,29 @@ function obtenerPorID(req, res) {
 }
 //----------------------------------------------------
 function obtenerPorFiltrado(req, res) {
-    const { genero, actor, rentable } = req.query;
-    const filtros = {};
+    const { generos, repartoPrincipales } = req.query;
+    const validarDatos = {}
+    if(generos) validarDatos.generos = generos
+    if(repartoPrincipales) validarDatos.repartoPrincipales = repartoPrincipales
+    
 
-    if (genero) filtros.generos = genero;
-    if (actor) filtros.repartoPrincipales = actor;
-    if (rentable) filtros.rentable = rentable;
-    console.log(filtros.generos,filtros.repartoPrincipales)
-
-    console.log("llamamos a vlaidar campos");
-    const valido = validarLosCampos(filtros);
-    if (!valido) {
+    if(!validarLosCampos(validarDatos)){
         console.log("parametros invalidos");
         res.status(400).json({ mensaje: "error" });
-    } else {
-        console.log("parametros validos");
-        res.status(200).json(valido);
+        return;
     }
 
+    const resultado = peliModelo.filtrarCampos({generos,repartoPrincipales});
 
-   // const filtros = peliModelo.filtrarCampos(genero, actor, rentable);
-    //hola
-
-
+    if(!resultado){
+        console.log("no se encontró ninguna peli con esos filtros");
+        res.status(400).json({ mensaje: "error, pelis con ese filtro no encontrada" });
+    }else{
+        res.status(200).json(resultado);
+    }
+    
 }
+
 //----------------------------------------------------
 
 //OK

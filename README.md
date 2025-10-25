@@ -1,7 +1,7 @@
 
 # API-de-las-Mejores-Pel-culas-Del-Mundo
 Tratando de lograr funcionar y crear una API con la temática de Peículas
-=======
+================================
 # Validaciones mínimas sugeridas(LISTO)
 @ Al crear:
 - No permitir campos vacíos.

@@ -1,5 +1,4 @@
 //considerar usar Schema
-
 const datosString = [
     "id",
     "titulo",

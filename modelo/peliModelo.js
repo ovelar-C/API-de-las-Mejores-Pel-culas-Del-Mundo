@@ -27,17 +27,34 @@ function traerPorID(id) {
 }
 
 //----------------------------------------------------
-function filtrarCampos(genero, actor, rentable) {
-    //devolver por generos
-    //por actores
+function filtrarCampos({generos, repartoPrincipales}) {
     //rentable
-    if(genero){
-        
+    let resultado = contenidoPeli;
+    if (generos) {
+        resultado = resultado.filter(peli => {
+            if (!peli.generos) return false;
+            // convierte array a string si es necesario
+            const generosStr = Array.isArray(peli.generos) ? peli.generos.join(", ") : peli.generos;
+            return generosStr.toLowerCase().includes(generos.toLowerCase());
+        });
+    }
+    if (repartoPrincipales) {
+        resultado = resultado.filter(peli => {
+            if (!peli.repartoPrincipales) return false;
+            const repartoStr = Array.isArray(peli.repartoPrincipales) ? peli.repartoPrincipales.join(", ") : peli.repartoPrincipales;
+            return repartoStr.toLowerCase().includes(repartoPrincipales.toLowerCase());
+        });
     }
 
-    
-
-   
+    const resultadoFinal = resultado.map(peli => ({
+        id: peli.id,
+        titulo: peli.titulo,
+        generos: peli.generos,
+        repartoPrincipales: peli.repartoPrincipales,
+        duracionMinutos: peli.duracionMinutos
+        })
+    );
+    return resultadoFinal;
 }
 //----------------------------------------------------
 
@@ -47,7 +64,6 @@ function agregarPelicula(ObjetoPeliculas) {
     const maxId = contenidoPeli.reduce((max, peliculas) => peliculas.id > max ? peliculas.id : max, 0);
     const nuevoId = maxId + 1;
 
-    //rentable???????????
     const peliculaNuevo = {
         id: nuevoId,
         titulo:             ObjetoPeliculas.titulo,
@@ -100,6 +116,10 @@ function actualizarPelicula(datosActualizar,peliId){
    
 }
 //----------------------------------------------------
+function rentabilidadPeli(){
+    //me dan un titulo y retorno si fue rentable o no
+}
+//----------------------------------------------------
 
 
 module.exports = {
@@ -109,4 +129,5 @@ module.exports = {
     agregarPelicula,
     eliminarPelicula,
     actualizarPelicula,
+    rentabilidadPeli
 }
