@@ -15,12 +15,13 @@ router.get('/:id',peliControlador.obtenerPorID);
 router.delete('/deletePeli/:id' , peliControlador.borrarPelicula);
 
 
-//GET localhost:3000/peliculas
-//GET localhost:3000/peliculas/4
-//POST localhost:3000/peliculas/postPeli {BODY}
-//DELETE localhost:3000/peliculas/deletePeli/31
-//GET localhost:3000/peliculas/filtro?generos=comedia&&repartoPrincipales=al pacino (400)
-//GET localhost:3000/peliculas/filtro?generos=drama&&repartoPrincipales=al pacino (200)
+//GET       localhost:3000/peliculas
+//GET       localhost:3000/peliculas/4
+//POST      localhost:3000/peliculas/postPeli {BODY}
+//DELETE    localhost:3000/peliculas/deletePeli/31
+//GET       localhost:3000/peliculas/filtro?generos=comedia&&repartoPrincipales=al pacino (400)
+//GET       localhost:3000/peliculas/filtro?generos=drama&&repartoPrincipales=al pacino (200)
+//PATCH     localhost:3000/peliculas/actualizar/33 {BODY}
 
 
 module.exports = router;

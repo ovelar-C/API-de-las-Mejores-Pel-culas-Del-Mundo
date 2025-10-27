@@ -27,19 +27,18 @@ function validarNumero(numero) {
 
 function validarString(clave, valor) {
     console.log("dentro de de validarString");
-    //me mandan un clave y un valor
-    const nuevoValor = valor.toString();
-    console.log(nuevoValor);
-    //vemos si clave esta en el array string
-    //vemos tambien si está vacío el valor
-    if (nuevoValor.trim() !== "") {
+    if(typeof valor !== 'string'){
+        console.log(clave, "debe ser un valor válido");
+        return false
+    }
+    if (valor.trim() !== "") {
         console.log(clave, "es valido");
         if (clave === "titulo") {
             console.log("titulo pasa");
             return true;
         } else {
             console.log("validamos si ", clave, " contiene numeros o letras");
-            return /^[a-zA-ZÀ-ÿ\s'-,.;/]+$/.test(nuevoValor);
+            return /^[a-zA-ZÀ-ÿ\s'-,.;/]+$/.test(valor);
         }
     }
     return false;

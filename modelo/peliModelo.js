@@ -112,22 +112,24 @@ function eliminarPelicula(id){
 }
 
 //----------------------------------------------------
+//aunque se quiera actualizar la id , no se puede
 function actualizarPelicula(datosActualizar,peliId){
-    //debo primero encontrar la peli con el id
-    //despues poder reemplazar los datos
     const indice =contenidoPeli.findIndex(peli => peli.id == peliId);
     //esto devuelve -1 si no encontro
-    if(indice === -1) return null
-
-    contenidoPeli[indice] = {... contenidoPeli[indice], ...datosActualizar,peliId}
-     try {
+    if(indice === -1){
+        console.log("id no econtrada");
+        return false
+    }
+    //copiamos las propiedades actuales de la peli
+    //sobrescrimos los datos con datosActualizar
+    contenidoPeli[indice] = {... contenidoPeli[indice], ...datosActualizar}
+    try {
         fs.writeFileSync(ubicacionArchivo, JSON.stringify(contenidoPeli, null, 4), 'utf-8');
         console.log("Película actualizada y guardado en el archivo");
     } catch (error) {
         console.error("Error al escribir en el archivo json", error.message);
     }
     return contenidoPeli[indice];
-   
 }
 //----------------------------------------------------
 function rentabilidadPeli(){

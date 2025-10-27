@@ -734,7 +734,7 @@
     },
     {
         "id": 33,
-        "titulo": 3,
+        "titulo": "titulo33",
         "fechaEstreno": 3,
         "director": "Tupac",
         "ganadorOscar": false,
@@ -746,11 +746,90 @@
         "rentable": null,
         "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
         "duracionMinutos": 101,
+        "paisOrigen": "Argentina",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "fa"
+        ]
+    },
+    {
+        "id": 34,
+        "titulo": "titulo33",
+        "fechaEstreno": 3,
+        "director": "Tupac",
+        "ganadorOscar": false,
+        "generos": [
+            "f"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Argentina",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "fa"
+        ]
+    },
+    {
+        "id": 35,
+        "titulo": 33,
+        "fechaEstreno": 3,
+        "director": "Tupac",
+        "ganadorOscar": false,
+        "generos": [
+            "f"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
         "paisOrigen": "Reino Unido / Estados Unidos",
         "idiomaOriginal": "Inglés",
         "repartoPrincipales": [
-            "333"
+            "fa"
+        ]
+    },
+    {
+        "id": 36,
+        "titulo": "33",
+        "fechaEstreno": 3,
+        "director": "Tupac",
+        "ganadorOscar": false,
+        "generos": [
+            "f"
         ],
-        "peliId": 33
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "fa"
+        ]
+    },
+    {
+        "id": 37,
+        "titulo": "33",
+        "fechaEstreno": 3,
+        "director": "Tupac",
+        "ganadorOscar": false,
+        "generos": [
+            "f"
+        ],
+        "costoInicial": 22,
+        "recaudacion": 12000000,
+        "rentable": null,
+        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
+        "duracionMinutos": 101,
+        "paisOrigen": "Reino Unido / Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "repartoPrincipales": [
+            "fa"
+        ]
     }
 ]
