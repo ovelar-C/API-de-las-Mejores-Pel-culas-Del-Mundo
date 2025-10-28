@@ -1,29 +1,25 @@
-# API REST PELÍCULAS
+# API REST de Películas 🎬
 
-## DESCRIPCÍON GENERAL
-El tema principal de esta generosa y humilde API son los filmes cinematograficos, el septimo arte. 
-El gran motivo de la elección de este tema es maravillosamente contundente : me gustan las películas.
-Teniendo en cuentas los siguientes datos incipientes y caracteristicas principales de una película los datos a tener son:
+## Descripción
+Esta API REST permite gestionar información sobre películas: creación, lectura, actualización y eliminación.  
+Los datos de cada película incluyen:
 
-- "Titulo"
-- "Fecha de Estreno"
-- "Director"
-- "Ganador del Oscar"
-- "Generos"
-- "Costo Inicial"
-- "Recaudacion"
-- "Rentabilidad"
-- "Sinopsis"
-- "Duracion"
-- "Pais de Origen"
-- "Idioma Original"
-- "Actores"
+- Título
+- Fecha de Estreno
+- Director
+- Ganador del Oscar
+- Géneros
+- Costo Inicial
+- Recaudación
+- Rentabilidad
+- Sinopsis
+- Duración
+- País de Origen
+- Idioma Original
+- Actores
 
-La función central de la API 
-- Lectura de información
-- Actualización
-- Eliminación
-- Creación
+La API sigue el patrón MVC y utiliza middlewares para validación y registro de logs.
+
 
 ```bash
 📦 API
@@ -53,27 +49,33 @@ La función central de la API
 ### Base URL http://localhost:3000/api/peliculas
 
 ### ENDPOINTS
-| Método | Ruta       | Descripción                             | Parámetros / Body                                     |    
-|--------|-----------|------------------------------------------|-------------------------------------------------------|
-| GET    | /         | Lista todas las películas                | Ninguno                                               |
-| GET    | /:id      | Obtiene una película por ID              | id (en URL)                                           |
-| GET    | /filtro   | Obtiene películas según los parámetros   | actor (query string, ej: `/filtro?actor=Tom`)         |
-| GET    | /rentable | Consulta la rentabilidad de una película | titulo (query string, ej: `/rentable?titulo=Matrix`)  |
-| POST   | /         | Agrega una nueva película                | { "titulo": "Matrix", "fechaEstreno": 1999 } (Body)   |
-| PATCH  | /:id      | Actualiza datos de una película          | id (en URL) y body con los campos a actualizar        |
-| DELETE | /:id      | Elimina una película                     | id (en URL)
+| Método | Ruta      | Descripción                              | Parámetros / Body                                   |
+| ------ | --------- | ---------------------------------------- | --------------------------------------------------- |
+| GET    | /         | Lista todas las películas                | Ninguno                                             |
+| GET    | /:id      | Obtiene una película por ID              | id (en URL)                                         |
+| GET    | /filtro   | Filtra películas por actor o género      | actor o genero (query string)                       |
+| GET    | /rentable | Consulta la rentabilidad de una película | titulo (query string)                               |
+| POST   | /         | Agrega una nueva película                | { "titulo": "Matrix", "fechaEstreno": 1999 } (Body) |
+| PATCH  | /:id      | Actualiza datos de una película          | id (en URL) y body con los campos a actualizar      |
+| DELETE | /:id      | Elimina una película                     | id (en URL)                                         |
+
 
 ### Middlewares Implementados
-- Logger : resgistra cada petición que llega a la API capturando fecha y hora, esta solicitud es guardad en un archivo logs.txt, Esto se ejecuta antes de que la solicitud llegue al controlador(app.use(logger))
-- Validador de Datos : verifica que los datos enviados sean los correctos y esperados
-- Express JSON : permite que la API lea y procese solicitudes en formato JSON
+| Middleware         | Descripción                                                        | Momento de ejecución           |
+| ------------------ | ------------------------------------------------------------------ | ------------------------------ |
+| Logger             | Registra cada petición con fecha y hora, guardándola en `logs.txt` | Antes de llegar al controlador |
+| Validador de datos | Verifica que los campos enviados sean correctos y completos        | Antes de llegar al controlador |
+| Express JSON       | Permite que la API procese solicitudes en formato JSON             | Antes de llegar al controlador |
+
 
 ### Validaciones
 Los campos esperados y que se validan son:
-- String : verifica que sea string, que no este vacío y que no contenga solo números
-- Integer : Valida solo los numeros enteros positivos
-- Booleano : Valida que los booleanos sean solo Booleanos
-- Array : Verifica si está vacío o contiene datos no correspondientes
+
+- String: no vacío, no solo números, solo caracteres válidos.
+- Integer: números enteros positivos.
+- Boolean: debe ser true o false.
+- Array: no vacío y con valores correctos.
+- Cualquier dato null o undefined es rechazado
 
 ### ejempo de uso
 ### conclución 
