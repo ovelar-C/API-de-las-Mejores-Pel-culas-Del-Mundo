@@ -1,7 +1,16 @@
+const fs = require('fs');
+const path = require('path');
+
 function logger(req, res, next) {
     const { method, url } = req;
     const timestamp = new Date().toISOString(); 
-    console.log(`[${timestamp}] ${method} ${url}`);
+    const log = `[${timestamp}] ${method} ${url}`;
+
+    const logPath = path.join(__dirname, 'logs.txt');
+    fs.appendFile(logPath, log, err =>{
+        if(err) console.log("error al escribir el log");
+    })
+
     next();
 }
 

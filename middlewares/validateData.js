@@ -7,7 +7,7 @@ const datosString = [
     "generos",
     "paisOrigen",
     "idiomaOriginal",
-    "repartoPrincipales"
+    "actores"
 ];
 
 const datosNumber = [

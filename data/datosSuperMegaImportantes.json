@@ -16,7 +16,7 @@
         "duracionMinutos": 202,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Al Pacino",
             "Robert De Niro",
             "Diane Keaton",
@@ -39,7 +39,7 @@
         "duracionMinutos": 101,
         "paisOrigen": "Reino Unido / Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Paul Mescal",
             "Frankie Corio",
             "Celia Rowlson-Hall"
@@ -62,7 +62,7 @@
         "duracionMinutos": 102,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Bill Murray",
             "Scarlett Johansson",
             "Giovanni Ribisi"
@@ -86,7 +86,7 @@
         "duracionMinutos": 155,
         "paisOrigen": "Estados Unidos / Reino Unido",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Russell Crowe",
             "Joaquin Phoenix",
             "Connie Nielsen",
@@ -109,7 +109,7 @@
         "duracionMinutos": 137,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Casey Affleck",
             "Michelle Williams",
             "Lucas Hedges",
@@ -134,7 +134,7 @@
         "duracionMinutos": 93,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Shûichirô Moriyama",
             "Tokiko Katô",
             "Akemi Okamura",
@@ -159,7 +159,7 @@
         "duracionMinutos": 114,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Bae Doona",
             "Aki Maeda",
             "Yû Kashii",
@@ -184,7 +184,7 @@
         "duracionMinutos": 106,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Ryûnosuke Kamiki",
             "Mone Kamishiraishi",
             "Ryo Narita",
@@ -203,12 +203,12 @@
         ],
         "costoInicial": 60000,
         "recaudacion": 248639099,
-        "rentable": null,
+        "rentable": true,
         "sinopsis": "Tres estudiantes de cine desaparecen en los bosques de Maryland mientras investigan la leyenda de la Bruja de Blair, dejando atrás solo sus cintas de video que revelan un terror creciente y eventos inexplicables.",
         "duracionMinutos": 81,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Heather Donahue",
             "Michael C. Williams",
             "Joshua Leonard"
@@ -231,7 +231,7 @@
         "duracionMinutos": 132,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Clint Eastwood",
             "Hilary Swank",
             "Morgan Freeman",
@@ -255,7 +255,7 @@
         "duracionMinutos": 169,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Tom Hanks",
             "Tom Sizemore",
             "Edward Burns",
@@ -280,7 +280,7 @@
         "duracionMinutos": 87,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Megumi Ogata",
             "Megumi Hayashibara",
             "Yûko Miyamura",
@@ -298,13 +298,13 @@
             "Drama"
         ],
         "costoInicial": 40000000,
-        "recaudacion": 116112375,
-        "rentable": null,
+        "recaudacion": 75,
+        "rentable": false,
         "sinopsis": "Un astuto gerente de casino en Las Vegas navega el mundo del juego controlado por la mafia, lidiando con ambiciones personales, traiciones y el declive de su matrimonio con una estafadora carismática.",
         "duracionMinutos": 178,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Robert De Niro",
             "Sharon Stone",
             "Joe Pesci",
@@ -327,7 +327,7 @@
         "duracionMinutos": 156,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Al Pacino",
             "Chris O'Donnell",
             "James Rebhorn",
@@ -350,7 +350,7 @@
         "duracionMinutos": 105,
         "paisOrigen": "Argentina",
         "idiomaOriginal": "Español",
-        "repartoPrincipales": [
+        "actores": [
             "Luis Brandoni",
             "China Zorrilla",
             "Antonio Gasalla",
@@ -375,7 +375,7 @@
         "duracionMinutos": 90,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Megumi Hayashibara",
             "Tôru Furuya",
             "Kôichi Yamadera",
@@ -400,7 +400,7 @@
         "duracionMinutos": 119,
         "paisOrigen": "Reino Unido / Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "George MacKay",
             "Dean-Charles Chapman",
             "Mark Strong",
@@ -425,7 +425,7 @@
         "duracionMinutos": 132,
         "paisOrigen": "Corea del Sur",
         "idiomaOriginal": "Coreano",
-        "repartoPrincipales": [
+        "actores": [
             "Song Kang-ho",
             "Lee Sun-kyun",
             "Cho Yeo-jeong",
@@ -450,7 +450,7 @@
         "duracionMinutos": 109,
         "paisOrigen": "Estados Unidos / Canadá",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Robert Pattinson",
             "Willem Dafoe",
             "Valeriia Karaman"
@@ -474,7 +474,7 @@
         "duracionMinutos": 124,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Roy Scheider",
             "Robert Shaw",
             "Richard Dreyfuss",
@@ -493,12 +493,12 @@
         ],
         "costoInicial": 1000000,
         "recaudacion": 225000000,
-        "rentable": null,
+        "rentable": true,
         "sinopsis": "Un boxeador de poca monta de Filadelfia recibe una oportunidad única de enfrentarse al campeón mundial de peso pesado, entrenando con determinación para demostrar su valía, mientras encuentra amor y propósito en su vida.",
         "duracionMinutos": 119,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Sylvester Stallone",
             "Talia Shire",
             "Burt Young",
@@ -523,7 +523,7 @@
         "duracionMinutos": 158,
         "paisOrigen": "Estados Unidos / Reino Unido",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Joaquin Phoenix",
             "Vanessa Kirby",
             "Tahar Rahim",
@@ -548,7 +548,7 @@
         "duracionMinutos": 108,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Mahiro Takasugi",
             "Lynn",
             "Yukiyo Fujii",
@@ -572,7 +572,7 @@
         "duracionMinutos": 87,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "David Lee Smith",
             "Tony Todd",
             "John Billingsley",
@@ -596,7 +596,7 @@
         "duracionMinutos": 149,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Tom Hanks",
             "Audrey Tautou",
             "Ian McKellen",
@@ -621,7 +621,7 @@
         "duracionMinutos": 125,
         "paisOrigen": "Japón",
         "idiomaOriginal": "Japonés",
-        "repartoPrincipales": [
+        "actores": [
             "Rumi Hiiragi",
             "Miyu Irino",
             "Mari Natsuki",
@@ -645,7 +645,7 @@
         "duracionMinutos": 128,
         "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
+        "actores": [
             "Robert De Niro",
             "Nick Nolte",
             "Jessica Lange",
@@ -654,182 +654,27 @@
     },
     {
         "id": 28,
-        "titulo": "ESTO ANDA O NO ANDA",
-        "fechaEstreno": 22,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
+        "titulo": "Her",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
         "generos": [
-            "3"
+            "Drama",
+            "Ciencia ficción",
+            "Romance"
         ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": true,
+        "sinopsis": "Un escritor solitario desarrolla una relación emocional con un sistema operativo de inteligencia artificial diseñado para adaptarse a sus necesidades, explorando los límites del amor, la conexión humana y la tecnología en un futuro cercano.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
         "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "333"
-        ]
-    },
-    {
-        "id": 29,
-        "titulo": "",
-        "fechaEstreno": 22,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "3"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "333"
-        ]
-    },
-    {
-        "id": 30,
-        "titulo": "",
-        "fechaEstreno": 22,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "3"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "333"
-        ]
-    },
-    {
-        "id": 32,
-        "titulo": "",
-        "fechaEstreno": 22,
-        "director": "Charlotte Welnnkjnkjnkjnls",
-        "ganadorOscar": false,
-        "generos": [
-            "3"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "333"
-        ]
-    },
-    {
-        "id": 33,
-        "titulo": "titulo33",
-        "fechaEstreno": 3,
-        "director": "Tupac",
-        "ganadorOscar": false,
-        "generos": [
-            "3"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Argentina",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "fa"
-        ]
-    },
-    {
-        "id": 34,
-        "titulo": "titulo33",
-        "fechaEstreno": 3,
-        "director": "Tupac",
-        "ganadorOscar": false,
-        "generos": [
-            "f"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Argentina",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "fa"
-        ]
-    },
-    {
-        "id": 35,
-        "titulo": 33,
-        "fechaEstreno": 3,
-        "director": "Tupac",
-        "ganadorOscar": false,
-        "generos": [
-            "f"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "fa"
-        ]
-    },
-    {
-        "id": 36,
-        "titulo": "33",
-        "fechaEstreno": 3,
-        "director": "Tupac",
-        "ganadorOscar": false,
-        "generos": [
-            "f"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "fa"
-        ]
-    },
-    {
-        "id": 37,
-        "titulo": "33",
-        "fechaEstreno": 3,
-        "director": "Tupac",
-        "ganadorOscar": false,
-        "generos": [
-            "f"
-        ],
-        "costoInicial": 22,
-        "recaudacion": 12000000,
-        "rentable": null,
-        "sinopsis": "Una chicalklkjlkj recuerda unas vacaciones con su padre veinte años atrás, intentando reconciliar al padre que conocía con el hombre que no conocía.",
-        "duracionMinutos": 101,
-        "paisOrigen": "Reino Unido / Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "repartoPrincipales": [
-            "fa"
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
         ]
     }
 ]

@@ -9,7 +9,7 @@ const logger = require('./middlewares/logger.js');
 
 app.use(logger);
 app.use(express.json());            //middlware para procesar y leer jsons
-app.use('/peliculas', peliculaRutas);
+app.use('/api/peliculas', peliculaRutas);
 
 //escuchamos las solicitudes en el puerto indicado
 app.listen(port,()=>{

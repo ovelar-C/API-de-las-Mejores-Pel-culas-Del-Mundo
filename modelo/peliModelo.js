@@ -27,8 +27,8 @@ function traerPorID(id) {
 }
 
 //----------------------------------------------------
-function filtrarCampos({generos, repartoPrincipales}) {
-    //rentable
+//el filtro busca coicidencias parciales no exactas :0
+function filtrarCampos({generos, actores}) {
     let resultado = contenidoPeli;
     //filtramos las pelis por genero
     if (generos) {
@@ -40,11 +40,11 @@ function filtrarCampos({generos, repartoPrincipales}) {
         });
     }
     //ya filtrado genero, filtramos por reparto
-    if (repartoPrincipales) {
+    if (actores) {
         resultado = resultado.filter(peli => {
-            if (!peli.repartoPrincipales) return false;
-            const repartoStr = Array.isArray(peli.repartoPrincipales) ? peli.repartoPrincipales.join(", ") : peli.repartoPrincipales;
-            return repartoStr.toLowerCase().includes(repartoPrincipales.toLowerCase());
+            if (!peli.actores) return false;
+            const repartoStr = Array.isArray(peli.actores) ? peli.actores.join(", ") : peli.actores;
+            return repartoStr.toLowerCase().includes(actores.toLowerCase());
         });
     }
 
@@ -54,7 +54,7 @@ function filtrarCampos({generos, repartoPrincipales}) {
         id: peli.id,
         titulo: peli.titulo,
         generos: peli.generos,
-        repartoPrincipales: peli.repartoPrincipales,
+        actores: peli.actores,
         duracionMinutos: peli.duracionMinutos
         })
     );
@@ -82,7 +82,7 @@ function agregarPelicula(ObjetoPeliculas) {
         duracionMinutos:    ObjetoPeliculas.duracionMinutos,
         paisOrigen:         ObjetoPeliculas.paisOrigen,
         idiomaOriginal:     ObjetoPeliculas.idiomaOriginal,
-        repartoPrincipales: ObjetoPeliculas.repartoPrincipales,
+        actores: ObjetoPeliculas.actores,
     }
     contenidoPeli.push(peliculaNuevo);
 
@@ -94,7 +94,6 @@ function agregarPelicula(ObjetoPeliculas) {
     }
     return peliculaNuevo;
 }
-
 
 function eliminarPelicula(id){
     console.log("dentro de eliminar pleicula")
@@ -111,8 +110,6 @@ function eliminarPelicula(id){
     }
 }
 
-//----------------------------------------------------
-//aunque se quiera actualizar la id , no se puede
 function actualizarPelicula(datosActualizar,peliId){
     const indice =contenidoPeli.findIndex(peli => peli.id == peliId);
     //esto devuelve -1 si no encontro
@@ -132,11 +129,31 @@ function actualizarPelicula(datosActualizar,peliId){
     return contenidoPeli[indice];
 }
 //----------------------------------------------------
-function rentabilidadPeli(){
+function rentabilidadPeli(titulo){
     //me dan un titulo y retorno si fue rentable o no
+    console.log("buscamos la peli ", titulo)
+    const peli =contenidoPeli.find(peli => peli.titulo.toLowerCase() === titulo.toLowerCase())
+    if(!peli) return false
+    
+    const diferencia = peli.recaudacion - peli.costoInicial
+
+    if(diferencia < 0){
+        peli.rentable = false;
+    }else{
+        peli.rentable = true;
+    }
+
+    let rentable = peli.rentable
+    datos = {titulo,rentable}
+    try {
+        fs.writeFileSync(ubicacionArchivo, JSON.stringify(contenidoPeli, null, 4), 'utf-8');
+        console.log("actualizamos rentablidad");
+    } catch (error) {
+        console.error("Error al escribir en el archivo json", error.message);
+    }
+    return datos
 }
 //----------------------------------------------------
-
 
 module.exports = {
     traerTodos,
