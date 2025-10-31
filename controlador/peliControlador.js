@@ -1,6 +1,7 @@
 //CONTROLADOR
-//MIDDLEWARE DE VALIDACIONEEEEEEEEEEEEEEEEEEEEEES
-const { validarNumero, validarLosCampos } = require('../middlewares/validateData.js');
+//MIDDLEWARE DE VALIDACIONEEEEEEEEEEEEEEEEEEEEEES D:
+//ARREGLAR POSTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT D:
+
 const peliModelo = require('../modelo/peliModelo.js');
 
 //OK//----------------------------------------------------
@@ -15,12 +16,9 @@ function listarTodos(req, res) {
 }
 //OK//----------------------------------------------------
 function obtenerPorID(req, res) {
-    const peliculaId = parseInt(req.params.id);
+    const peliId = parseInt(req.params.id)
 
-    if (!validarNumero(peliculaId)) {
-        return res.status(400).json({ mensaje: "id debe ser un NÚMERO POSITIVO VÁLIDO" });
-    }
-    const pelicula = peliModelo.traerPorID(peliculaId);
+    const pelicula = peliModelo.traerPorID(peliId);
     if (pelicula) {
         res.status(200).json(pelicula);
     } else {
@@ -34,31 +32,27 @@ function obtenerPorFiltrado(req, res) {
     if (generos) validarDatos.generos = generos
     if (actores) validarDatos.actores = actores
 
-    if (!validarLosCampos(validarDatos)) {
-        console.log("parametros invalidos");
-        return res.status(400).json({ mensaje: "error" });
-    }
-
     const resultado = peliModelo.filtrarCampos({ generos, actores });
     if (!resultado) {
-        console.log("No se encontró ninguna película con esos filtros");
         res.status(404).json({ mensaje: "ERROR, películas con ese filtro no encontrada" });
     } else {
         res.status(200).json(resultado);
     }
 }
 
-//OK//----------------------------------------------------
+//NO OK//----------------------------------------------------
 function sumarPelicula(req, res) {
     console.log("dentro de la funcion sumar pelicula");
     const datosPeliculas = req.body
-    console.log("llamando a validar campos");
+    //arreglar
     delete datosPeliculas.id
 
+    /*
     if(!validarLosCampos(datosPeliculas)){
         console.log("completar campos vacios");
         return res.status(400).json({ mensaje: "completar todos los campos con datos válidos" });
     }
+        */
 
     const peliculas = peliModelo.agregarPelicula(datosPeliculas);
     if (peliculas) {
@@ -69,10 +63,7 @@ function sumarPelicula(req, res) {
 }
 //OK//----------------------------------------------------
 function borrarPelicula(req, res) {
-    console.log("dentro de borrar pelicula");
-
     const peliculaId = parseInt(req.params.id);
-    if(!validarNumero(peliculaId)) return res.status(400).json({mensaje:"Id no válido"})
     const borrarPeli = peliModelo.eliminarPelicula(peliculaId);
 
     if (!borrarPeli) {
@@ -82,6 +73,7 @@ function borrarPelicula(req, res) {
     }
 }
 //OK//----------------------------------------------------
+
 function modificarPelicula(req, res) {
     const peliId = parseInt(req.params.id);
     const datosActualizados = req.body;

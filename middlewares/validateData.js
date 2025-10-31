@@ -16,115 +16,112 @@ const datosNumber = [
     "recaudacion",
     "duracionMinutos"
 ];
+//----------------------------------------------------------
 
-function validarNumero(numero) {
-    if (Number.isInteger(numero) && numero > 0) {
-        return numero;
-    } else {
-        return false;
-    }
+function validarID(valor) {
+    const numeroValor = parseInt(valor);
+    if (Number.isInteger(numeroValor)) return true
+    return false
+    
 }
+//----------------------------------------------------------
 
 function validarString(clave, valor) {
     console.log("dentro de de validarString");
-    if(typeof valor !== 'string'){
-        console.log(clave, "debe ser un valor válido");
-        return false
-    }
-    if (valor.trim() !== "") {
-        console.log(clave, "es valido");
-        if (clave === "titulo") {
-            console.log("titulo pasa");
-            return true;
-        } else {
-            console.log("validamos si ", clave, " contiene numeros o letras");
-            return /^[a-zA-ZÀ-ÿ\s'-,.;/]+$/.test(valor);
-        }
+    if (typeof valor !== 'string') return false
+
+    if (valor.trim() === "") return false
+
+    if (clave === "titulo") {
+        console.log("titulo pasa");
+        return true;
+    } else {
+        console.log("validamos si ", clave, " contiene numeros o letras");
+        return /^[a-zA-ZÀ-ÿ\s'-,.;/]+$/.test(valor);
     }
     return false;
 }
+//----------------------------------------------------------
 
 function validarNumeros(clave, valor) {
-    console.log("validar dentro de numeros ", clave, valor);
-
     const numeroValor = parseInt(valor);
     if (!Number.isInteger(numeroValor) || numeroValor <= 0) {
-                console.log(clave, " ", valor, "debe ser un número positivo");
-
         return false;
     }
     return true;
 }
+//----------------------------------------------------------
 
 function validarArrays(clave, valor) {
-    console.log("array", clave, valor);
     //que linda la funcion every, gracias linus
     const todosValidos = valor.every(elemento => validarString(clave, elemento));
-
-    if (!todosValidos) {
-        return false;
-    }
-    return true;
+    return todosValidos;
 }
+//----------------------------------------------------------
 
-function validarBooleano(clave, valor) {
-    console.log("dentro de validar booleano");
-    console.log(clave, " ", valor);
-    if (typeof valor !== "boolean") {
-        console.log(clave, " ", valor);
-        console.log(clave, "debe ser un dato  booleano");
-        return false;
+function validate(req, res, next) {
+    const datos = req.body; //
+    const id = req.params.id;
+    const filtros = req.query;
+    console.log(req.method);
+    console.log(id);
+    console.log(filtros);
+
+    if (!id && Object.keys(filtros).length > 0) {
+        console.log("validamos los campos");
+        if (!validarCampos(filtros))
+            return res.status(400).json({ mensaje: "filtro con datos invalidos o vacíos" })
     }
-    console.log(clave, " ", valor);
-    return true;
+    if (id && !validarID(id)) {
+        return res.status(400).json({ mensaje: "id invalida" })
+    }
+    console.log("id fue valido");
+
+    if (['PATCH', 'POST'].includes(req.method)) {
+        if (!validarCampos(datos) || !datos)
+            return res.status(400).json({ mensaje: "body vacío o invalido" });
+    }
+
+    next();
+
 }
+//----------------------------------------------------------
 
-function validarLosCampos(camposPelis) {
-    for (let clave in camposPelis) {
-        const valor = camposPelis[clave];
-
+function validarCampos(datos) {
+    for (let clave in datos) {
+        const valor = datos[clave];
         //validamos si tenemos un valor nulo o indefinido
-        if (typeof valor === "undefined" || valor === null) {
-            console.log(`La propiedad "${clave}" tiene un valor undefined o nulo`);
-            return false;
-        }
+        if(typeof valor === 'undefined' || valor === null) return false
+
         //validamos que ganadorOscar es un booleano(el único que lo debe ser)
-        if (clave === "ganadorOscar") {
-            if (!validarBooleano(clave, valor)) {
-                return false;
-            }
-            continue;
-        }
+        if (clave === "ganadorOscar" && typeof valor !== 'boolean') return false
+
         //validamos los arrays
-        if (Array.isArray(valor)) {
-            console.log("es un array", clave, valor);
-            if (!validarArrays(clave, valor)) {
-                console.log("contenido del array invalido");
-                return false;
-            }
-            continue;
-        }
-        if(!datosNumber.includes(clave) && !datosString.includes(clave)){
+        if(Array.isArray(valor) && !validarArrays(clave,valor)) return false
+
+        if (!datosNumber.includes(clave) && !datosString.includes(clave)) {
             console.log("no se permiten campos adicionales", clave);
-            return false;
+            return false
         }
         //validamos los demas valores
-        console.log("llamando a validar string");
-        if(datosString.includes(clave)){
-            if(!validarString(clave,valor)) return false
+
+        /*
+        if (datosString.includes(clave)) {
+            if (!validarString(clave, valor)) return false
             continue;
         }
+
         if (datosNumber.includes(clave)) {
             if (!validarNumeros(clave, valor)) return false
             continue;
-            }
         }
-    //despúes del salir del for mandamos true
-    return true;
+        */
+        if(datosNumber.includes(clave) && !validarNumeros(clave,valor)) return false
+        if(datosString.includes(clave) && !validarString(clave,valor)) return false
+
+        return true;
+    }
 }
 
-module.exports = {
-    validarNumero,
-    validarLosCampos,
-}
+module.exports = validate;
 
