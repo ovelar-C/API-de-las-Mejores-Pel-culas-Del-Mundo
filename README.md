@@ -43,8 +43,8 @@ La API sigue el patrón MVC y utiliza middlewares para validación y registro de
 
 - Controlador : se encarga de recibir las solicitudes y de coordinar el flujo de datos
 - Modelo : se encarga del manejo y la lógica de los datos
-- Vista : definición de las rutas y el receptor de las solicitudes http
-- Middlewares : se ejecuta entre el request y el response, ademas de tener validaciones
+- Vista : definición de las rutas y el receptor de las solicitudes HTTP
+- Middlewares : se ejecuta entre el request y el response
 
 ### Base URL http://localhost:3000/api/peliculas
 
@@ -104,20 +104,44 @@ GET localhost:3000/api/peliculas/filtro?generos=drama&&actores=al pacino
 
 ```bash
 POST localhost:3000/api/peliculas
+Body (JSON):
+{
+  "titulo": "Inception",
+  "fechaEstreno": 2010,
+  "director": "Christopher Nolan",
+  "ganadorOscar": true,
+  "generos": ["Ciencia ficción", "Acción"],
+  "costoInicial": 160000000,
+  "recaudacion": 830000000,
+  "sinopsis": "Un ladrón roba secretos entrando en los sueños de las personas.",
+  "duracionMinutos": 148,
+  "paisOrigen": "Estados Unidos",
+  "idiomaOriginal": "Inglés",
+  "actores": ["Leonardo DiCaprio", "Elliot Page"]
+}
+
 ```
 ![Captura de la app](./assets/postPelicula.png)
 
 
 ```bash
-PATCH localhost:3000/api/peliculas/34
+PATCH localhost:3000/api/peliculas/35
 ```
 ![Captura de la app](./assets/patchPelicula.png)
 
 ```bash
-delete localhost:3000/api/peliculas/34
+delete localhost:3000/api/peliculas/35
 ```
 ![Captura de la app](./assets/deletePelicula.png)
 
 
-### conclución 
+## 🛠️ Tecnologías utilizadas
+- Node.js
+- Express.js
+- Middleware personalizado (logger, validador)
+- JSON como fuente de datos
+- Postman para pruebas
+
+### Conclusión
+- 
 
