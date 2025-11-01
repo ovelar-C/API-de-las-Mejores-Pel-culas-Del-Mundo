@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+//----------------------------------------------------
 function logger(req, res, next) {
     const { method, url } = req;
     const timestamp = new Date().toISOString(); 
@@ -10,8 +10,7 @@ function logger(req, res, next) {
     fs.appendFile(logPath, log, err =>{
         if(err) console.log("error al escribir el log");
     })
-
     next();
 }
-
+//----------------------------------------------------
 module.exports = logger;

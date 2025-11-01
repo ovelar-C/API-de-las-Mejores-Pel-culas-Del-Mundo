@@ -1,11 +1,10 @@
 //VISTA
-
+//----------------------------------------------------
 const express = require('express'); 
 const router = express.Router();    
-
-//referencia al controlador
 const peliControlador = require('../controlador/peliControlador');
 const validar = require('../middlewares/validateData');
+//----------------------------------------------------
 
 //definicion de las rutas, primero las rutas estaticas y despues las dinamicas
 router.get('/', peliControlador.listarTodos);
@@ -27,6 +26,5 @@ router.delete('/:id' ,validar, peliControlador.borrarPelicula);
 //GET       localhost:3000/api/peliculas/rentable?titulo=paprika (TRUE)
 //GET       localhost:3000/api/peliculas/rentable?titulo=CASINO (FALSE)
 
-
-
+//----------------------------------------------------
 module.exports = router;

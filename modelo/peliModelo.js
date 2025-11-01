@@ -1,14 +1,10 @@
 //MODELO
-
-console.log("Modelo datosPeliculasModelo.js está siendo ejecutado");
+//-------------------------------------------------------------------------------------
 const fs = require('fs');
 const path = require('path');
-
-//los datos lo tengo en un archivo json
 const ubicacionArchivo = path.join(__dirname, '../data/datosSuperMegaImportantes.json');
 const contenidoPeli = JSON.parse(fs.readFileSync(ubicacionArchivo, 'utf8'));
-
-//----------------------------------------------------
+//--------------------------------------------------------------------------------------
 function traerTodos() {
     try {
         return contenidoPeli;
@@ -60,8 +56,7 @@ function agregarPelicula(ObjetoPeliculas) {
     //calculamos el id max que tiene peliculas, cuando termina le sumamos 1
     const maxId = contenidoPeli.reduce((max, peliculas) => peliculas.id > max ? peliculas.id : max, 0);
     const nuevoId = maxId + 1;
-    //VALIDAR TODOS LOS CAMPOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOS
-    //ANTES DE CREAR
+
     const peliculaNuevo = {
         id: nuevoId,
         titulo: ObjetoPeliculas.titulo,
@@ -90,35 +85,28 @@ function agregarPelicula(ObjetoPeliculas) {
 }
 //----------------------------------------------------
 function eliminarPelicula(id) {
-    console.log("dentro de eliminar pleicula")
-    //Devuelve un nuevo array con los elementos que pasaron la condición
     const peliELiminada = contenidoPeli.filter(peli => peli.id !== id);
     const datosPeliEliminada = contenidoPeli.filter(peli => peli.id === id);
 
     if (peliELiminada.length === contenidoPeli.length) {
-        console.log("id no encontrada");
         return false;
     } else {
-        console.log("pelicula eliminada");
         fs.writeFileSync(ubicacionArchivo, JSON.stringify(peliELiminada, null, 4), 'utf-8');
         return datosPeliEliminada;
     }
 }
 //----------------------------------------------------
-
 function actualizarPelicula(datosActualizar, peliId) {
     const indice = contenidoPeli.findIndex(peli => peli.id == peliId);
     //esto devuelve -1 si no encontro
-    if (indice === -1) {
-        console.log("id no econtrada");
-        return false
-    }
+    if (indice === -1) return false
+    
     //copiamos las propiedades actuales de la peli
     //sobrescrimos los datos con datosActualizar
     contenidoPeli[indice] = { ...contenidoPeli[indice], ...datosActualizar }
+
     try {
         fs.writeFileSync(ubicacionArchivo, JSON.stringify(contenidoPeli, null, 4), 'utf-8');
-        console.log("Película actualizada y guardado en el archivo");
     } catch (error) {
         console.error("Error al escribir en el archivo json", error.message);
     }
@@ -126,9 +114,6 @@ function actualizarPelicula(datosActualizar, peliId) {
 }
 //----------------------------------------------------
 function rentabilidadPeli(titulo) {
-    //me dan un titulo y retorno si fue rentable o no
-    console.log("buscamos la peli ", titulo)
-
     const peli = contenidoPeli.find(peli => peli.titulo.toLowerCase() === titulo.toLowerCase())
     if (!peli) return false
 
@@ -144,14 +129,12 @@ function rentabilidadPeli(titulo) {
     datos = { titulo, rentable }
     try {
         fs.writeFileSync(ubicacionArchivo, JSON.stringify(contenidoPeli, null, 4), 'utf-8');
-        console.log("actualizamos rentablidad");
     } catch (error) {
         console.error("Error al escribir en el archivo json", error.message);
     }
     return datos
 }
 //----------------------------------------------------
-
 module.exports = {
     traerTodos,
     traerPorID,

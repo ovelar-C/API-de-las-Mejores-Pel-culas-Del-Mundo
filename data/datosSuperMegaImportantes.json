@@ -34,7 +34,7 @@
         ],
         "costoInicial": 2100000,
         "recaudacion": 10000000,
-        "rentable": null,
+        "rentable": true,
         "sinopsis": "Una chica escocesa de 11 años recuerda unas vacaciones en un resort turco con su padre, quien lucha con su melancolía interna, mientras intenta reconciliar los recuerdos felices con la complejidad de su relación.",
         "duracionMinutos": 101,
         "paisOrigen": "Reino Unido / Estados Unidos",
@@ -773,6 +773,29 @@
     },
     {
         "id": 33,
+        "titulo": "44",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
+        "generos": [
+            "eee"
+        ],
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": null,
+        "sinopsis": "djdkjdkd.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
+        ]
+    },
+    {
+        "id": 34,
         "titulo": "44",
         "fechaEstreno": 2013,
         "director": "Spike Jonze",

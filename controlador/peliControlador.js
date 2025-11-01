@@ -1,10 +1,8 @@
 //CONTROLADOR
-//MIDDLEWARE DE VALIDACIONEEEEEEEEEEEEEEEEEEEEEES D:
-//ARREGLAR POSTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT D:
-
+//----------------------------------------------------
 const peliModelo = require('../modelo/peliModelo.js');
 
-//OK//----------------------------------------------------
+//----------------------------------------------------
 function listarTodos(req, res) {
     const peliculas = peliModelo.traerTodos();
 
@@ -14,7 +12,7 @@ function listarTodos(req, res) {
         res.status(404).json({ mensaje: "error al listar o lista vacía" });
     }
 }
-//OK//----------------------------------------------------
+//----------------------------------------------------
 function obtenerPorID(req, res) {
     const peliId = parseInt(req.params.id)
 
@@ -25,7 +23,7 @@ function obtenerPorID(req, res) {
         res.status(404).json({ mensaje: "error al obtener ID" })
     }
 }
-//OK//----------------------------------------------------
+//----------------------------------------------------
 function obtenerPorFiltrado(req, res) {
     const { generos, actores } = req.query;
     const validarDatos = {}
@@ -39,8 +37,7 @@ function obtenerPorFiltrado(req, res) {
         res.status(200).json(resultado);
     }
 }
-
-//NO OK//----------------------------------------------------
+//----------------------------------------------------
 function sumarPelicula(req, res) {
     const datosPeliculas = req.body
     const peliculas = peliModelo.agregarPelicula(datosPeliculas);
@@ -50,7 +47,7 @@ function sumarPelicula(req, res) {
         res.status(500).json({ mensaje: "error al agregar la película" });
     }
 }
-//OK//----------------------------------------------------
+//----------------------------------------------------
 function borrarPelicula(req, res) {
     const peliculaId = parseInt(req.params.id);
     const borrarPeli = peliModelo.eliminarPelicula(peliculaId);
@@ -61,13 +58,10 @@ function borrarPelicula(req, res) {
         res.status(200).json(borrarPeli);
     }
 }
-//OK//----------------------------------------------------
-
+//OK----------------------------------------------------
 function modificarPelicula(req, res) {
     const peliId = parseInt(req.params.id);
     const datosActualizados = req.body;
-    //titulo no me valida si es número o booleano nose noseeeeeeee porqueeeeeeeee
-    delete datosActualizados.id;
 
     const peli = peliModelo.actualizarPelicula(datosActualizados, peliId);
 
@@ -77,7 +71,7 @@ function modificarPelicula(req, res) {
         res.status(200).json(peli);
     }
 }
-//OK//----------------------------------------------------
+//----------------------------------------------------
 function calcularRentable(req,res){
     const {titulo} = req.query
     if(!titulo) return res.status(400).json({mensaje: "titulo vacío"});
@@ -88,7 +82,6 @@ function calcularRentable(req,res){
     res.status(200).json(esRentable);
 }
 //----------------------------------------------------
-
 module.exports = {
     listarTodos,
     obtenerPorID,

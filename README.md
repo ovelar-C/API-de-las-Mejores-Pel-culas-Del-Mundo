@@ -77,6 +77,47 @@ Los campos esperados y que se validan son:
 - Array: no vacío y con valores correctos.
 - Cualquier dato null o undefined es rechazado
 
-### ejempo de uso
+### Ejemplos de uso con Postman
+
+```bash
+GET localhost:3000/api/peliculas
+```
+![Captura de la app](./assets/getPeliculas.png)
+
+
+```bash
+GET localhost:3000/api/peliculas/2
+```
+![Captura de la app](./assets/getID.png)
+
+```bash
+GET localhost:3000/api/rentable?titulo=aftersun
+```
+![Captura de la app](./assets/getRentable.png)
+
+
+```bash
+GET localhost:3000/api/peliculas/filtro?generos=drama&&actores=al pacino
+```
+![Captura de la app](./assets/getFiltro.png)
+
+
+```bash
+POST localhost:3000/api/peliculas
+```
+![Captura de la app](./assets/postPelicula.png)
+
+
+```bash
+PATCH localhost:3000/api/peliculas/34
+```
+![Captura de la app](./assets/patchPelicula.png)
+
+```bash
+delete localhost:3000/api/peliculas/34
+```
+![Captura de la app](./assets/deletePelicula.png)
+
+
 ### conclución 
 
