@@ -11,8 +11,8 @@ const validar = require('../middlewares/validateData');
 router.get('/', peliControlador.listarTodos);
 router.get('/filtro', validar, peliControlador.obtenerPorFiltrado);
 router.get('/rentable',validar, peliControlador.calcularRentable);
-router.post('/',peliControlador.sumarPelicula);
-router.patch('/:id', peliControlador.modificarPelicula);
+router.post('/',validar, peliControlador.sumarPelicula);
+router.patch('/:id', validar,peliControlador.modificarPelicula);
 router.get('/:id',validar,peliControlador.obtenerPorID);
 router.delete('/:id' ,validar, peliControlador.borrarPelicula);
 

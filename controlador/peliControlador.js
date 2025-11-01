@@ -42,18 +42,7 @@ function obtenerPorFiltrado(req, res) {
 
 //NO OK//----------------------------------------------------
 function sumarPelicula(req, res) {
-    console.log("dentro de la funcion sumar pelicula");
     const datosPeliculas = req.body
-    //arreglar
-    delete datosPeliculas.id
-
-    /*
-    if(!validarLosCampos(datosPeliculas)){
-        console.log("completar campos vacios");
-        return res.status(400).json({ mensaje: "completar todos los campos con datos válidos" });
-    }
-        */
-
     const peliculas = peliModelo.agregarPelicula(datosPeliculas);
     if (peliculas) {
         res.status(201).json(peliculas);
@@ -78,21 +67,8 @@ function modificarPelicula(req, res) {
     const peliId = parseInt(req.params.id);
     const datosActualizados = req.body;
     //titulo no me valida si es número o booleano nose noseeeeeeee porqueeeeeeeee
-    if (Object.keys(datosActualizados).length === 0) {
-        return res.status(400).json({ mensaje: "sin datos para actualizar" });
-    }
-    //validación de la id
-    if (!validarNumero(peliId)) {
-        return res.status(400).json({ mensaje: "ID invalido" });
-    }
-    //borramos el id que viene del body
     delete datosActualizados.id;
 
-    //validación de los campos
-    if (!validarLosCampos(datosActualizados)) {
-        return res.status(400).json({ mensaje: "Completar todos los campos con valores válidos por favor" });
-    }
-    //si pasa todo OK
     const peli = peliModelo.actualizarPelicula(datosActualizados, peliId);
 
     if (!peli) {

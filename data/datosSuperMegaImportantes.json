@@ -676,5 +676,122 @@
             "Amy Adams",
             "Rooney Mara"
         ]
+    },
+    {
+        "id": 29,
+        "titulo": "PROBANDO POST",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama",
+            "Ciencia ficción",
+            "Romance"
+        ],
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": null,
+        "sinopsis": "Un escritor solitario desarrolla una relación emocional con un sistema operativo de inteligencia artificial diseñado para adaptarse a sus necesidades, explorando los límites del amor, la conexión humana y la tecnología en un futuro cercano.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
+        ]
+    },
+    {
+        "id": 30,
+        "titulo": "44",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
+        "generos": [
+            "Drama",
+            "Ciencia ficción",
+            "Romance"
+        ],
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": null,
+        "sinopsis": "Un escritor solitario desarrolla una relación emocional con un sistema operativo de inteligencia artificial diseñado para adaptarse a sus necesidades, explorando los límites del amor, la conexión humana y la tecnología en un futuro cercano.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
+        ]
+    },
+    {
+        "id": 31,
+        "titulo": "44",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
+        "generos": [],
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": null,
+        "sinopsis": "Un escritor solitario desarrolla una relación emocional con un sistema operativo de inteligencia artificial diseñado para adaptarse a sus necesidades, explorando los límites del amor, la conexión humana y la tecnología en un futuro cercano.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
+        ]
+    },
+    {
+        "id": 32,
+        "titulo": "44",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
+        "generos": [
+            "eee"
+        ],
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": null,
+        "sinopsis": "Un escritor solitario desarrolla una relación emocional con un sistema operativo de inteligencia artificial diseñado para adaptarse a sus necesidades, explorando los límites del amor, la conexión humana y la tecnología en un futuro cercano.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
+        ]
+    },
+    {
+        "id": 33,
+        "titulo": "44",
+        "fechaEstreno": 2013,
+        "director": "Spike Jonze",
+        "ganadorOscar": true,
+        "generos": [
+            "eee"
+        ],
+        "costoInicial": 23000000,
+        "recaudacion": 48500000,
+        "rentable": null,
+        "sinopsis": "djdkjdkd.",
+        "duracionMinutos": 126,
+        "paisOrigen": "Estados Unidos",
+        "idiomaOriginal": "Inglés",
+        "actores": [
+            "Joaquin Phoenix",
+            "Scarlett Johansson",
+            "Amy Adams",
+            "Rooney Mara"
+        ]
     }
 ]
