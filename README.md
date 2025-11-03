@@ -95,12 +95,10 @@ GET localhost:3000/api/rentable?titulo=aftersun
 ```
 ![Captura de la app](./assets/getRentable.png)
 
-
 ```bash
 GET localhost:3000/api/peliculas/filtro?generos=drama&&actores=al pacino
 ```
 ![Captura de la app](./assets/getFiltro.png)
-
 
 ```bash
 POST localhost:3000/api/peliculas
@@ -123,7 +121,6 @@ Body (JSON):
 ```
 ![Captura de la app](./assets/postPelicula.png)
 
-
 ```bash
 PATCH localhost:3000/api/peliculas/35
 ```
@@ -142,6 +139,5 @@ delete localhost:3000/api/peliculas/35
 - JSON como fuente de datos
 - Postman para pruebas
 
-### Conclusión
-- 
-
+### Conclusión 
+- Este proyecto representó un gran aprendizaje en la implementación de APIs REST con Node.js y Express, aplicando el patrón MVC, validaciones, middlewares y pruebas con Postman. En este proceso se consolidaron conceptos clave de arquitectura y comunicación entre cliente y servidor.
