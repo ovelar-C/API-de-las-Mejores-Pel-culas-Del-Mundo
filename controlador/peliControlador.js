@@ -1,7 +1,6 @@
 //CONTROLADOR
 //----------------------------------------------------
 const peliModelo = require('../modelo/peliModelo.js');
-
 //----------------------------------------------------
 function listarTodos(req, res) {
     const peliculas = peliModelo.traerTodos();
@@ -9,7 +8,7 @@ function listarTodos(req, res) {
     if (peliculas.length > 0) {
         res.status(200).json(peliculas);
     } else {
-        res.status(404).json({ mensaje: "error al listar o lista vacía" });
+        res.status(404).json({ mensaje: "Error al listar o lista vacía" });
     }
 }
 //----------------------------------------------------
@@ -20,7 +19,7 @@ function obtenerPorID(req, res) {
     if (pelicula) {
         res.status(200).json(pelicula);
     } else {
-        res.status(404).json({ mensaje: "error al obtener ID" })
+        res.status(404).json({ mensaje: "Error al obtener ID" })
     }
 }
 //----------------------------------------------------
@@ -44,7 +43,7 @@ function sumarPelicula(req, res) {
     if (peliculas) {
         res.status(201).json(peliculas);
     } else {
-        res.status(500).json({ mensaje: "error al agregar la película" });
+        res.status(500).json({ mensaje: "Error al agregar la película" });
     }
 }
 //----------------------------------------------------
@@ -53,7 +52,7 @@ function borrarPelicula(req, res) {
     const borrarPeli = peliModelo.eliminarPelicula(peliculaId);
 
     if (!borrarPeli) {
-        res.status(404).json({ mensaje: "error al eliminar la película" });
+        res.status(404).json({ mensaje: "Error al eliminar la película" });
     } else {
         res.status(200).json(borrarPeli);
     }
@@ -66,7 +65,7 @@ function modificarPelicula(req, res) {
     const peli = peliModelo.actualizarPelicula(datosActualizados, peliId);
 
     if (!peli) {
-        res.status(404).json({ mensaje: " error al actulizar los datos" });
+        res.status(404).json({ mensaje: " Error al actualizar los datos" });
     } else {
         res.status(200).json(peli);
     }
@@ -74,10 +73,10 @@ function modificarPelicula(req, res) {
 //----------------------------------------------------
 function calcularRentable(req,res){
     const {titulo} = req.query
-    if(!titulo) return res.status(400).json({mensaje: "titulo vacío"});
+    if(!titulo) return res.status(400).json({mensaje: "Titulo vacío"});
 
     esRentable = peliModelo.rentabilidadPeli(titulo);
-    if(!esRentable) return res.status(404).json({mensaje: "titulo no encontrado"});
+    if(!esRentable) return res.status(404).json({mensaje: "Titulo no encontrado"});
     
     res.status(200).json(esRentable);
 }

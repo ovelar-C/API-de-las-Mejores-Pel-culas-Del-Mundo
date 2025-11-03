@@ -9,7 +9,7 @@ function traerTodos() {
     try {
         return contenidoPeli;
     } catch (error) {
-        console.log("error al leer el json", error);
+        console.log(error);
         return [];
     }
 }
@@ -18,7 +18,6 @@ function traerPorID(id) {
     return  contenidoPeli.find(peli => peli.id === id);
 }
 //----------------------------------------------------
-//el filtro busca coicidencias parciales no exactas :0
 function filtrarCampos({ generos, actores }) {
     let resultado = contenidoPeli;
     //filtramos las pelis por genero

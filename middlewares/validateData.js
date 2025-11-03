@@ -32,7 +32,6 @@ function validarString(clave, valor) {
         //se saltea titulo porque titulo puede contener números
         return true;
     } else {
-        console.log("validamos si ", clave, " contiene numeros o letras");
         return /^[a-zA-ZÀ-ÿ\s'-,.;/]+$/.test(valor);
     }
 }
@@ -46,7 +45,6 @@ function validarNumeros(clave, valor) {
 }
 //----------------------------------------------------------
 function validarArrays(clave, valor) {
-    console.log("dentro de validar array",clave)
     //que linda la funcion every, gracias linus
     if (valor.length === 0) return false
     const todosValidos = valor.every(elemento => validarString(clave, elemento));
@@ -62,21 +60,19 @@ function validate(req, res, next) {
 
     if (!id && Object.keys(filtros).length > 0) {
         if (!validarCampos(filtros))
-            return res.status(400).json({ mensaje: "filtro con datos invalidos o vacíos" })
+            return res.status(400).json({ mensaje: "Filtro con datos invalidos o vacíos" })
     }
     if (id && !validarID(id)) {
-        return res.status(400).json({ mensaje: "id invalida" })
+        return res.status(400).json({ mensaje: "ID invalida" })
     }
-
     //SEPARAR PATCH Y POST(sugerencia)
     if (['PATCH', 'POST'].includes(req.method)) {
-        if (!datos || Object.keys(datos).length === 0) return res.status(400).json({ mensaje: "sin datos para agregar" });
+        if (!datos || Object.keys(datos).length === 0) return res.status(400).json({ mensaje: "Sin datos para agregar" });
         delete datos.id
         delete datos.rentable
-        if (Object.keys(datos).length != cantidad && !['PATCH'].includes(req.method)) return res.status(400).json({ mensaje: "todos los campos son obligatorios" })
+        if (Object.keys(datos).length != cantidad && !['PATCH'].includes(req.method)) return res.status(400).json({ mensaje: "Todos los campos son obligatorios" })
         if (!validarCampos(datos)) return res.status(400).json({ mensaje: "body vacío o con datos invalidos" });
     }
-
     next();
 }
 //----------------------------------------------------------
