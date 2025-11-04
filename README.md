@@ -153,8 +153,7 @@ npm install
 ```
 3️⃣ Iniciar el servidor
 ```bash
-node index.js
-
+npm start 
 ```
 
 ### Conclusión 
