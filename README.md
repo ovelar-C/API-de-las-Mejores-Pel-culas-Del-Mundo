@@ -91,6 +91,7 @@ GET localhost:3000/api/peliculas/2
 ![Captura de la app](./assets/getID.png)
 
 ```bash
+La propiedad rentable se calcula y se actualiza al momento de de buscar la película
 GET localhost:3000/api/rentable?titulo=aftersun
 ```
 ![Captura de la app](./assets/getRentable.png)
@@ -103,6 +104,7 @@ GET localhost:3000/api/peliculas/filtro?generos=drama&&actores=al pacino
 ```bash
 POST localhost:3000/api/peliculas
 Body (JSON):
+La propiedad ID y rentable se agregan después de hacer el POST
 {
   "titulo": "Inception",
   "fechaEstreno": 2010,

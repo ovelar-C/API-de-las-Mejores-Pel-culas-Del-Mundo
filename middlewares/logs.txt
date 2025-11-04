@@ -400,3 +400,4 @@
 [2025-11-01T20:49:24.396Z] POST /api/peliculas
 [2025-11-01T20:52:02.144Z] PATCH /api/peliculas/35
 [2025-11-01T20:53:18.058Z] DELETE /api/peliculas/35
+[2025-11-04T00:04:39.030Z] GET /api/peliculas
