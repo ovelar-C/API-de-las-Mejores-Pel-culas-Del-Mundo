@@ -141,5 +141,21 @@ delete localhost:3000/api/peliculas/35
 - JSON como fuente de datos
 - Postman para pruebas
 
+## 🚀 Cómo ejecutar el proyecto
+1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/ovelar-C/API-de-las-Mejores-Pel-culas-Del-Mundo.git
+```
+2️⃣ Instalar dependencias
+```bash
+npm install
+```
+3️⃣ Iniciar el servidor
+```bash
+node index.js
+
+```
+
 ### Conclusión 
 - Este proyecto representó un gran aprendizaje en la implementación de APIs REST con Node.js y Express, aplicando el patrón MVC, validaciones, middlewares y pruebas con Postman. En este proceso se consolidaron conceptos clave de estructura y comunicación entre cliente y servidor.
