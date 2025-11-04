@@ -104,7 +104,7 @@ GET localhost:3000/api/peliculas/filtro?generos=drama&&actores=al pacino
 ```bash
 POST localhost:3000/api/peliculas
 Body (JSON):
-La propiedad ID y rentable se agregan después de hacer el POST
+Las propiedades ID y rentable se agregan después de hacer el POST
 {
   "titulo": "Inception",
   "fechaEstreno": 2010,

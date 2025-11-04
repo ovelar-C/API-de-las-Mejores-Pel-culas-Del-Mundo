@@ -750,71 +750,25 @@
     },
     {
         "id": 32,
-        "titulo": "44",
-        "fechaEstreno": 2013,
-        "director": "Spike Jonze",
-        "ganadorOscar": true,
+        "titulo": "La Bruja de Blair",
+        "fechaEstreno": 1999,
+        "director": "Daniel Myrick, Eduardo Sánchez",
+        "ganadorOscar": false,
         "generos": [
-            "eee"
+            "Terror",
+            "Misterio"
         ],
-        "costoInicial": 23000000,
-        "recaudacion": 48500000,
+        "costoInicial": 3,
+        "recaudacion": 248639099,
         "rentable": null,
-        "sinopsis": "Un escritor solitario desarrolla una relación emocional con un sistema operativo de inteligencia artificial diseñado para adaptarse a sus necesidades, explorando los límites del amor, la conexión humana y la tecnología en un futuro cercano.",
-        "duracionMinutos": 126,
-        "paisOrigen": "Estados Unidos",
+        "sinopsis": "Tres estudiantes de cine desaparecen en los bosques de Maryland mientras investigan la leyenda de la Bruja de Blair, dejando atrás solo sus cintas de video que revelan un terror creciente y eventos inexplicables.",
+        "duracionMinutos": 81,
+        "paisOrigen": "dos Unidos",
         "idiomaOriginal": "Inglés",
         "actores": [
-            "Joaquin Phoenix",
-            "Scarlett Johansson",
-            "Amy Adams",
-            "Rooney Mara"
-        ]
-    },
-    {
-        "id": 33,
-        "titulo": "44",
-        "fechaEstreno": 2013,
-        "director": "Spike Jonze",
-        "ganadorOscar": true,
-        "generos": [
-            "eee"
-        ],
-        "costoInicial": 23000000,
-        "recaudacion": 48500000,
-        "rentable": null,
-        "sinopsis": "djdkjdkd.",
-        "duracionMinutos": 126,
-        "paisOrigen": "Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "actores": [
-            "Joaquin Phoenix",
-            "Scarlett Johansson",
-            "Amy Adams",
-            "Rooney Mara"
-        ]
-    },
-    {
-        "id": 34,
-        "titulo": "44",
-        "fechaEstreno": 2013,
-        "director": "Spike Jonze",
-        "ganadorOscar": true,
-        "generos": [
-            "eee"
-        ],
-        "costoInicial": 23000000,
-        "recaudacion": 48500000,
-        "rentable": null,
-        "sinopsis": "djdkjdkd.",
-        "duracionMinutos": 126,
-        "paisOrigen": "Estados Unidos",
-        "idiomaOriginal": "Inglés",
-        "actores": [
-            "Joaquin Phoenix",
-            "Scarlett Johansson",
-            "Amy Adams",
-            "Rooney Mara"
+            "Heather Donahue",
+            "Michael C. Williams",
+            "Joshua Leonard"
         ]
     }
 ]

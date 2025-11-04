@@ -46,7 +46,7 @@ function sumarPelicula(req, res) {
         res.status(500).json({ mensaje: "Error al agregar la película" });
     }
 }
-//----------------------------------------------------
+//-----------------------------------------------------
 function borrarPelicula(req, res) {
     const peliculaId = parseInt(req.params.id);
     const borrarPeli = peliModelo.eliminarPelicula(peliculaId);
@@ -54,7 +54,7 @@ function borrarPelicula(req, res) {
     if (!borrarPeli) {
         res.status(404).json({ mensaje: "Error al eliminar la película" });
     } else {
-        res.status(200).json(borrarPeli);
+        res.status(200).json({mensaje:"película eliminada :",borrarPeli});
     }
 }
 //OK----------------------------------------------------

@@ -70,7 +70,7 @@ function validate(req, res, next) {
         if (!datos || Object.keys(datos).length === 0) return res.status(400).json({ mensaje: "Sin datos para agregar" });
         delete datos.id
         delete datos.rentable
-        if (Object.keys(datos).length != cantidad && !['PATCH'].includes(req.method)) return res.status(400).json({ mensaje: "Todos los campos son obligatorios" })
+        if (Object.keys(datos).length != cantidad && !['PATCH'].includes(req.method)) return res.status(400).json({ mensaje: "No se permite agregar o restar algún campo" })
         if (!validarCampos(datos)) return res.status(400).json({ mensaje: "body vacío o con datos invalidos" });
     }
     next();
