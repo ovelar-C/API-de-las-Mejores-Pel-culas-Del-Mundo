@@ -140,4 +140,4 @@ delete localhost:3000/api/peliculas/35
 - Postman para pruebas
 
 ### Conclusión 
-- Este proyecto representó un gran aprendizaje en la implementación de APIs REST con Node.js y Express, aplicando el patrón MVC, validaciones, middlewares y pruebas con Postman. En este proceso se consolidaron conceptos clave de arquitectura y comunicación entre cliente y servidor.
+- Este proyecto representó un gran aprendizaje en la implementación de APIs REST con Node.js y Express, aplicando el patrón MVC, validaciones, middlewares y pruebas con Postman. En este proceso se consolidaron conceptos clave de estructura y comunicación entre cliente y servidor.
